@@ -1,33 +1,70 @@
+/* config 23 February */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color1: #d6a51f; /*pripary bright color */
+  --color2: #002e5b; /* secondary dark color*/
+  --color3: red; /* not sure */
+
+  /* used for components background*/
+  --backgroundDark: rgba(107, 73, 73, 0);
+  --backgroundLight: rgb(255, 255, 255);
+
+  /* used for photo overlay to write text over */
+  --overlay: rgba(0, 0, 0, 0.548);
+
+  /* font colors*/
+  --textLight: rgb(255, 255, 255);
+  --textMedium: #acacac;
+  --textDark: rgb(19, 19, 19);
+
+  /* some additional colors*/
+  --green: rgb(40, 186, 40);
+  --red: rgb(231, 65, 65);
+  --purple: purple;
+  --blue: blue;
+
+  font-family: var(--font1); /* fancy font can be not so much readable*/
+  font-family: var(--font2); /* text font (Navigation Font) */
+  font-family: var(--font3); /* mian font (Regular Text Font)*/
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.color1 {
+  color: var(--color1);
+}
+.color2 {
+  color: var(--color2);
+}
+.bgColor1 {
+  background-color: var(--color1);
+}
+.bgColor2 {
+  background-color: var(--color2);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.measaureLine {
+  height: 17px;
+  background-image: url(../../public//assets//measure.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  opacity: 0.5;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.notFound {
+  background-color: var(--color1);
+  height: 50vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

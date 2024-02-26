@@ -1,0 +1,75 @@
+/* big image head text on it and button on it with dark layout */
+
+.ImageTextButton {
+  width: 100%;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlay);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.space {
+  width: 30%;
+  height: auto;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+  max-width: 50%;
+  overflow: hidden;
+  width: 60%;
+  max-width: 600px;
+  padding-right: 50px;
+  align-items: end;
+}
+
+.textWrapper h1 {
+  font-family: var(--font2);
+  font-size: 35px;
+  color: var(--textLight);
+  font-weight: 600;
+}
+
+/* .textWrapper h2 {
+  font-family: var(--font2);
+  color: var(--textMedium);
+  font-weight: 300;
+} */
+.textWrapper a {
+  margin: 20px 0;
+  width: 250px;
+}
+
+.textWrapper svg {
+  font-size: 22px;
+}
+.image {
+  max-height: 60vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .textWrapper {
+    padding-right: 0;
+    width: 90%;
+  }
+  .textWrapper h1 {
+    font-size: 25px;
+  }
+  .space {
+    width: 0;
+  }
+  .image {
+    max-height: 100vh;
+    height: 500px;
+  }
+}

@@ -1,0 +1,29 @@
+.logoNav {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 80px;
+}
+.logoNav a {
+  margin: auto 0;
+  position: relative;
+  z-index: 10;
+}
+
+.navigatioWrapper {
+  display: flex;
+  gap: 15px;
+  margin: auto 0;
+}
+.logo {
+  font-size: 30px;
+  font-family: var(--font1);
+}
+
+@media (max-width: 650px) {
+  .navigatioWrapper {
+    display: none;
+  }
+}

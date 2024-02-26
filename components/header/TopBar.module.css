@@ -1,0 +1,23 @@
+.blueBar {
+  background-color: var(--color2);
+  padding: 14px 0;
+  color: var(--textLight);
+}
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 0px 20px;
+  max-width: 800px;
+  justify-content: space-between;
+  z-index: 20;
+}
+.textInBlue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meadiaWrapper {
+  display: flex;
+  gap: 10px;
+}

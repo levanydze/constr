@@ -1,0 +1,26 @@
+.navWrapper {
+  margin: auto 0;
+}
+
+.navUl {
+  display: flex;
+  gap: 15px;
+  text-align: center;
+}
+
+.link {
+  transition: all 0.3s;
+}
+.activeLink {
+  color: var(--color1);
+}
+
+.link:hover {
+  color: var(--color1);
+}
+
+@media (max-width: 649px) {
+  .navWrapper {
+    display: none;
+  }
+}

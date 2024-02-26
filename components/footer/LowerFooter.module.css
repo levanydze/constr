@@ -1,0 +1,15 @@
+.lowerFooter {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  gap: 5px;
+  font-family: var(--font2);
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--backgroundLight);
+}
+
+.lowerFooter p {
+  color: var(--textMedium);
+}

@@ -1,0 +1,19 @@
+.mediaWrapper {
+  display: flex;
+  gap: 10px;
+}
+.media {
+  background-color: var(--color2);
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 6px;
+  transition: 0.3s;
+  color: var(--textLight);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+.media:hover {
+  background-color: var(--color1);
+}

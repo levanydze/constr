@@ -1,0 +1,25 @@
+.footWrapper {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: var(--backgroundLight);
+}
+
+.footWrapper p {
+  display: flex;
+  gap: 5px;
+  padding: 13px 0;
+}
+.icons {
+  font-size: 22px;
+}
+
+.infoFooter {
+  max-width: 30%;
+  gap: 5%;
+}
+.logo {
+  font-size: 30px;
+  font-family: var(--font1);
+}
