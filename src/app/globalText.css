@@ -1,0 +1,105 @@
+.textSmall {
+}
+.textMedium {
+}
+.textBig {
+}
+
+.font1 {
+  font-family: var(--font1);
+}
+
+.font2 {
+  font-family: var(--font2);
+}
+
+.font3 {
+  font-family: var(--font3);
+}
+
+.text15 {
+  font-size: 15px;
+}
+.text16 {
+  font-size: 16px;
+}
+.text17 {
+  font-size: 17px;
+}
+.text18 {
+  font-size: 18px;
+}
+.text19 {
+  font-size: 19px;
+}
+.text20 {
+  font-size: 20px;
+}
+.text21 {
+  font-size: 21px;
+}
+.text22 {
+  font-size: 22px;
+}
+.text23 {
+  font-size: 23px;
+}
+.text24 {
+  font-size: 24px;
+}
+.text25 {
+  font-size: 25px;
+}
+.text30 {
+  font-size: 30px;
+}
+.text35 {
+  font-size: 35px;
+}
+.text40 {
+  font-size: 40px;
+}
+.text45 {
+  font-size: 45px;
+}
+.text50 {
+  font-size: 50px;
+}
+
+.gray1 {
+  color: var(--gray1);
+}
+
+.gray2 {
+  color: var(--gray2);
+}
+.gray3 {
+  color: var(--gray3);
+}
+.gray4 {
+  color: var(--gray4);
+}
+.gray5 {
+  color: var(--gray5);
+}
+.gray6 {
+  color: var(--gray6);
+}
+.gray7 {
+  color: var(--gray7);
+}
+.gray8 {
+  color: var(--gray8);
+}
+.gray9 {
+  color: var(--gray9);
+}
+.gray10 {
+  color: var(--gray10);
+}
+
+@media (max-width: 800px) {
+  .text15 {
+    font-size: 14px;
+  }
+}

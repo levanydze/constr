@@ -1,0 +1,46 @@
+.FourBoxMainWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 100px auto;
+  max-width: 2000px;
+}
+
+.FourBoxMainWrapper p {
+  margin: 20px 0;
+}
+
+.FourBoxMainWrapper div,
+.FourBoxMainWrapper a {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  justify-content: center;
+  border: 1px solid var(--gray3);
+  border-right: none;
+}
+.FourBoxMainWrapper div:last-child,
+.FourBoxMainWrapper a:last-child {
+  border-right: 1px solid var(--gray3);
+}
+
+@media (max-width: 1000px) {
+  .eachBox {
+    width: 50%;
+  }
+  .box1 {
+    border-right: none;
+    border-bottom: none;
+  }
+  .box2 {
+    border-right: 1px solid var(--gray3);
+    border-bottom: none;
+  }
+  .box3 {
+    border-right: none;
+  }
+}

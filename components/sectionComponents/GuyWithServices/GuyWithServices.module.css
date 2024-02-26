@@ -25,6 +25,7 @@
 .image {
   max-height: 600px;
   object-fit: contain;
+  margin: auto;
 }
 
 .sideSection {
@@ -37,7 +38,7 @@
   align-items: center;
 }
 .sideSection img {
-  margin: 0 auto;
+  margin: auto;
 }
 
 .sideSection a {

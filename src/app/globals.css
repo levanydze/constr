@@ -27,10 +27,21 @@
   --textMedium: #acacac;
   --textDark: rgb(19, 19, 19);
 
+  /* gray colors */
+  --gray10: rgb(20, 20, 20);
+  --gray9: rgb(40, 40, 40);
+  --gray8: rgb(70, 70, 70);
+  --gray7: rgb(90, 90, 90);
+  --gray6: rgb(120, 120, 120);
+  --gray5: rgb(150, 150, 150);
+  --gray4: rgb(180, 180, 180);
+  --gray3: rgb(200, 200, 200);
+  --gray2: rgb(230, 230, 230);
+  --gray1: rgb(255, 255, 255);
+
   /* some additional colors*/
   --green: rgb(40, 186, 40);
   --red: rgb(231, 65, 65);
-  --purple: purple;
   --blue: blue;
 
   font-family: var(--font1); /* fancy font can be not so much readable*/

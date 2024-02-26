@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Oswald, Inter, Gabriela } from "next/font/google";
-import "./levani.css";
+import "./globalLevani.css";
 import "./globals.css";
+import "./globalText.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 

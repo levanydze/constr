@@ -1,0 +1,74 @@
+.TextIntoPhotoWrapper {
+  width: 100%;
+  display: flex;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.image {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 600px;
+}
+
+.textDivWrapper {
+  width: 50%;
+  z-index: 1;
+  margin: auto -20%;
+  padding: 10px;
+  background-color: var(--backgroundLight);
+}
+.textDiv {
+  border: 1px solid var(--gray4);
+  text-align: center;
+  padding: 15%;
+}
+.textDiv img {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.textDiv h2 {
+  font-family: var(--font1);
+}
+.textDiv p {
+  margin: 20px auto;
+}
+
+@media (max-width: 700px) {
+  .TextIntoPhotoWrapper {
+    flex-direction: column;
+    margin-bottom: 200px;
+  }
+  .textDivWrapper {
+    width: 70%;
+    margin: -20% auto;
+  }
+
+  .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .image {
+    min-height: 400px;
+  }
+  .textDiv h5 {
+    font-size: 14px;
+  }
+  .textDiv p {
+    margin: 10px auto;
+  }
+  .textDiv {
+    padding: 25px;
+  }
+  .TextIntoPhotoWrapper {
+    margin-bottom: 140px;
+  }
+}
