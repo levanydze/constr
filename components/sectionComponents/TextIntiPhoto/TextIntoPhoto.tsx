@@ -41,9 +41,9 @@ export default function TextIntoPhoto({
               width={60}
               height={60}
             ></Image>
-            <h2>{title}</h2>
+            <h2 className="title4 ">{title}</h2>
             <p className="twoLines"></p>
-            <h5 className="text1">{text}</h5>
+            <h5 className="text1 textMedium">{text}</h5>
           </div>
         </div>
       </div>

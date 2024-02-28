@@ -1,0 +1,44 @@
+.TwoTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+  font-size: 13px;
+}
+
+.head {
+  text-align: center;
+}
+.head h4 {
+  font-family: var(--font3);
+  color: var(--primaryColor);
+  font-size: 23px;
+}
+.head h2 {
+  font-family: var(--font-primary);
+  color: var(--textDark);
+  font-size: 30px;
+}
+.head p {
+  margin: 30px auto;
+}
+.texts {
+  display: flex;
+  width: 90%;
+  margin: 20px auto 60px auto;
+  gap: 5%;
+  color: var(--textMedium);
+  line-height: 25px;
+  font-size: 15px;
+  max-width: 1200px;
+}
+
+@media (max-width: 650px) {
+  .texts {
+    line-height: 18px;
+    font-size: 15px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

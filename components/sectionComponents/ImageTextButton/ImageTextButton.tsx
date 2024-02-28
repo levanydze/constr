@@ -11,8 +11,10 @@ export default function ImageTextButton() {
       <div className={styles.overlay}>
         <div className={styles.space}></div>
         <div className={styles.textWrapper}>
-          <h1>Professional Tiling & Painting Services</h1>
-          <h2 className="text3">
+          <h1 className="title7 textLight font1">
+            Professional Tiling & Painting Services
+          </h1>
+          <h2 className="text1 ">
             We combine quality workmanship, superior knowledge and low prices to
             provide you with service unmatched by our competitors.
           </h2>

@@ -19,12 +19,15 @@
   --backgroundDark: rgba(107, 73, 73, 0);
   --backgroundLight: rgb(255, 255, 255);
 
+  /* image backgrunds needed*/
+  /* here */
+
   /* used for photo overlay to write text over */
-  --overlay: rgba(0, 0, 0, 0.548);
+  --overlay: rgba(0, 0, 0, 0.355);
 
   /* font colors*/
   --textLight: rgb(255, 255, 255);
-  --textMedium: #acacac;
+  --textMedium: #737373;
   --textDark: rgb(19, 19, 19);
 
   /* gray colors */
@@ -44,38 +47,105 @@
   --red: rgb(231, 65, 65);
   --blue: blue;
 
-  font-family: var(--font1); /* fancy font can be not so much readable*/
-  font-family: var(--font2); /* text font (Navigation Font) */
-  font-family: var(--font3); /* mian font (Regular Text Font)*/
+  /* colors for restaurant menu*/
+  --spicy: purple;
+  --new: rgb(231, 65, 65);
+  --vegan: rgb(40, 186, 40);
+  --season: rgb(49, 145, 160);
+
+  font-family: var(--font1); /* Nicer  font for Navigation  or Title etc... */
+  font-family: var(--font2); /* fancy font can be not so much readable*/
+  font-family: var(
+    --font3
+  ); /* signature font not readable hand writting or something like that)*/
 }
 
+/* text color classes */
+.textLight {
+  color: var(--textLight);
+}
+.textMedium {
+  color: var(--textMedium);
+}
+.textDark {
+  color: var(--textDark);
+}
 .color1 {
   color: var(--color1);
 }
 .color2 {
   color: var(--color2);
 }
-.bgColor1 {
-  background-color: var(--color1);
+
+/* FONT Classes */
+
+.font1 {
+  font-family: var(--font1);
 }
-.bgColor2 {
-  background-color: var(--color2);
+.font2 {
+  font-family: var(--font2);
+}
+.font3 {
+  font-family: var(--font3);
 }
 
-.measaureLine {
-  height: 17px;
-  background-image: url(../../public//assets//measure.png);
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
-  opacity: 0.5;
+.text1 {
+  font-size: 15px;
+  font-family: var(--font1);
+  letter-spacing: 1px;
 }
 
-.notFound {
-  background-color: var(--color1);
-  height: 50vh;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.title0 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.title1 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.title2 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.title3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.title4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.title5 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.title6 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.title7 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.title8 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.title9 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.title10 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.signature {
+  font-family: var(--font3);
+  font-size: 60px;
 }

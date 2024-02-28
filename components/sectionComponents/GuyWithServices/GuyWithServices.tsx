@@ -9,11 +9,11 @@ export default function GuyWithServices() {
   const { guy } = imagesJson;
   const { houseIcon, paintIcon, roofIcon } = assetsJson;
   return (
-    <div className="">
+    <div>
       <div className={styles.mainWrapper}>
         <div className={styles.textWrapper}>
-          <h2>WE ARE EXPERT IN </h2>
-          <h3>What we love to do</h3>
+          <h2 className="title2">WE ARE EXPERT IN </h2>
+          <h3 className="title4">What we love to do</h3>
         </div>
         <div className={styles.threeSectionWrapper}>
           <div className={styles.sideSection}>

@@ -21,6 +21,7 @@
   scale: 1.04;
 }
 /* button1 END */
+
 /* button2 START */
 .button2 {
   border: 1px solid var(--color2);
@@ -43,43 +44,40 @@
 }
 /* button2 END */
 
+/* elements */
+/* <p classname=".twolines"></p> */
+.twoLines {
+  height: 4px;
+  width: 100px;
+  border-top: 1px solid var(--color1);
+  border-bottom: 1px solid var(--color1);
+  margin: 0 auto;
+}
+
+/* mesurer <div classname="measureLine"> </div> */
+.measaureLine {
+  height: 17px;
+  background-image: url(../../public//assets//measure.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  opacity: 0.5;
+}
+
+/* mini text in red background  */
+/* <h1>Title <p className="updated">updated</p></h1> */
+.updated {
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin: auto 5px;
+  border-radius: 3px;
+  padding: 0 5px;
+  background-color: var(--red);
+}
+
 /* Text Start */
 
-.text1 {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 28px;
-  color: var(--gray7);
-  font-family: var(--font2);
-}
-
-.text2 {
-  font-size: 23px;
-  padding: 10px 0;
-  font-family: var(--font2);
-  font-weight: 500;
-}
-
-.text3 /* text3 is medium 15px - 13px */ {
-  color: var(--textMedium);
-  font-family: var(--font2);
-  font-size: 15px;
-  display: flex;
-  gap: 5px;
-}
-.text4 {
-  color: var(--textLight);
-  font-family: var(--font2);
-  font-size: 14px;
-  display: flex;
-  gap: 5px;
-}
-.text10 {
-  font-size: 50px;
-}
-
 /* containers */
-
 .container1 {
   padding: 10px;
 }
@@ -89,19 +87,13 @@
   background-size: 16px;
   padding: 100px;
 }
-
-/* elements */
-.twoLines {
-  height: 4px;
-  width: 100px;
-  border-top: 1px solid var(--color1);
-  border-bottom: 1px solid var(--color1);
-  margin: 0 auto;
-}
-
-@media (max-width: 1000px) {
-  .text3 {
-    font-size: 13px;
+@media (max-width: 700px) {
+  .container2 {
+    padding: 50px;
   }
 }
-/* Text END */
+@media (max-width: 500px) {
+  .container2 {
+    padding: 20px;
+  }
+}

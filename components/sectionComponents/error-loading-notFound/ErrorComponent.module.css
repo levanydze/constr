@@ -1,0 +1,10 @@
+.errorWrapper {
+  text-align: center;
+  font-size: 30px;
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+
+  margin: 0 auto;
+  padding: 200px 0;
+  width: 100%;
+}

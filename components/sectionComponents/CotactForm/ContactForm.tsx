@@ -16,8 +16,8 @@ const ContactForm: React.FC = () => {
   return (
     <>
       <div className={styles.formHead}>
-        <h2>Contact Us</h2>
-        <h3>For Better Experience</h3>
+        <h2 className="title3 color1 ">Contact Us</h2>
+        <h3 className="title4 font1">For Better Experience</h3>
         <p className="twoLines"></p>
       </div>
       <form
@@ -53,7 +53,7 @@ const ContactForm: React.FC = () => {
         />
       </form>
       <div className={emailSent ? styles.formSent : styles.hide}>
-        <h6> Thank you for your message</h6>
+        <h6 className="title5"> Thank you for your message</h6>
       </div>
     </>
   );

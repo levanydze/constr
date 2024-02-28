@@ -9,13 +9,6 @@
   text-align: center;
   padding: 40px 0;
 }
-.textWrapper h2 {
-  font-weight: 300;
-  letter-spacing: 2px;
-}
-.textWrapper h3 {
-  font-size: 28px;
-}
 
 .threeSectionWrapper {
   display: flex;
@@ -37,8 +30,12 @@
   text-align: center;
   align-items: center;
 }
+
 .sideSection img {
   margin: auto;
+}
+.sideSection h2 {
+  padding: 10px 0;
 }
 
 .sideSection a {

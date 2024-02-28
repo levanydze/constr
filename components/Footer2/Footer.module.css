@@ -1,0 +1,33 @@
+.footMainWrapper {
+  background-color: var(--color2);
+}
+
+.footWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 70px 50px;
+  line-height: 25px;
+  font-size: 14px;
+  gap: 4%;
+  color: var(--textLight);
+}
+
+.footWrapper h5 {
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.footWrapper main {
+  width: 25%;
+}
+
+@media (max-width: 1000px) {
+  .footWrapper {
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+  .footWrapper main {
+    min-width: 300px;
+    margin-bottom: 10%;
+  }
+}

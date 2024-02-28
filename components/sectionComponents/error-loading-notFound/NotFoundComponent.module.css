@@ -1,0 +1,12 @@
+.notFound {
+  background-color: var(--color1);
+  height: 50vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notFound h5 {
+  padding: 20px 0;
+}

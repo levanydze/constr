@@ -31,18 +31,9 @@
   align-items: end;
 }
 
-.textWrapper h1 {
-  font-family: var(--font2);
-  font-size: 35px;
-  color: var(--textLight);
-  font-weight: 600;
+.textWrapper h2 {
+  color: var(--gray3);
 }
-
-/* .textWrapper h2 {
-  font-family: var(--font2);
-  color: var(--textMedium);
-  font-weight: 300;
-} */
 .textWrapper a {
   margin: 20px 0;
   width: 250px;

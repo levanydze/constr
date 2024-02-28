@@ -1,0 +1,26 @@
+.menuWrapper {
+  width: 100%;
+}
+
+.menuHead {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.menuHead h1 {
+  text-transform: uppercase;
+}
+.menuHead p {
+  margin: 10px auto 3% auto;
+}
+
+.cardsMapWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 3% auto;
+}

@@ -1,16 +1,15 @@
 import Link from "next/link";
 import React from "react";
+import PageHeadImage from "../../components/sectionComponents/PageHeadImage/PageHeadImage";
+import imagesJson from "../../json/images.json";
+import NotFoundComponent from "../../components/sectionComponents/error-loading-notFound/NotFoundComponent";
 
 export default function error() {
+  const { headImage } = imagesJson;
   return (
-    <div className="notFound">
-      <h6 className="text10">404</h6>
-      <h5 className="text2">
-        Sorry, the page you are looking for was not found!
-      </h5>
-      <Link className="button2" href="./">
-        Back To Homepage
-      </Link>
-    </div>
+    <>
+      <PageHeadImage short image={headImage} value="Something Went Wrong " />
+      <NotFoundComponent />
+    </>
   );
 }

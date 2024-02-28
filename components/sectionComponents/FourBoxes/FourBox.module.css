@@ -23,24 +23,33 @@
   border: 1px solid var(--gray3);
   border-right: none;
 }
+
+.FourBoxMainWrapper h4 {
+  word-wrap: break-word;
+  max-width: 80%;
+}
 .FourBoxMainWrapper div:last-child,
 .FourBoxMainWrapper a:last-child {
   border-right: 1px solid var(--gray3);
 }
 
-@media (max-width: 1000px) {
-  .eachBox {
+@media (max-width: 800px) {
+  .FourBoxMainWrapper {
+    flex-wrap: wrap;
+  }
+  .FourBoxMainWrapper div,
+  .FourBoxMainWrapper a {
     width: 50%;
   }
-  .box1 {
-    border-right: none;
-    border-bottom: none;
-  }
-  .box2 {
+  .FourBoxMainWrapper div:nth-child(2),
+  .FourBoxMainWrapper a:nth-child(2) {
     border-right: 1px solid var(--gray3);
-    border-bottom: none;
   }
-  .box3 {
-    border-right: none;
+
+  .FourBoxMainWrapper div:nth-child(1),
+  .FourBoxMainWrapper a:nth-child(1),
+  .FourBoxMainWrapper div:nth-child(2),
+  .FourBoxMainWrapper a:nth-child(2) {
+    border-bottom: none;
   }
 }

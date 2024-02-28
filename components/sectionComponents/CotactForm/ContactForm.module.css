@@ -2,15 +2,6 @@
   text-align: center;
   margin-top: 100px;
 }
-.formHead h2 {
-  font-family: var(--font1);
-  color: var(--color1);
-}
-.formHead h3 {
-  font-family: var(--font1);
-  font-size: 30px;
-  color: var(--textDark);
-}
 .formHead p {
   margin: 30px auto;
 }
@@ -28,12 +19,11 @@
   margin: 0 auto 200px auto;
 }
 .formSent {
-  font-size: 50px;
   color: var(--green);
   text-align: center;
   border: 3px solid var(--color1);
   width: 70%;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 100px 0px;
   opacity: 1;
   transition: opacity 1s ease;

@@ -21,13 +21,13 @@ export default function EachFourBox({
         <div>
           <Image src={image} width={70} height={70} alt={alt} />
           <p className="twoLines"></p>
-          <h4 className="gray8 font2">{title}</h4>
+          <h4 className="text1 textMedium">{title}</h4>
         </div>
       ) : (
         <Link href="/contact">
           <Image src={image} width={70} height={70} alt={alt} />
           <p className="twoLines"></p>
-          <h4 className="gray8 font2">{title}</h4>
+          <h4 className="text1 textMedium">{title}</h4>
         </Link>
       )}
     </>

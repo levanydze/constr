@@ -1,0 +1,14 @@
+.logoWrap {
+  text-align: center;
+  line-height: 20px;
+  font-family: var(--font2);
+}
+.logoWrap h1 {
+  color: var(--color1);
+  font-size: 18px;
+}
+.logoWrap h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--textLight);
+}

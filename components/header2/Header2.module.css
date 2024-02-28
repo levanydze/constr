@@ -1,0 +1,12 @@
+.headWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: absolute;
+  width: 100%;
+  position: relative;
+  height: 80px;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+}

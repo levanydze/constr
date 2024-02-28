@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TopBar.module.css";
-import SocialMedia from "../miniComponents/SocialMedia";
+import SocialMedia from "../miniComponents/SocialMedia/SocialMedia";
 import infoJson from "../../json/info.json";
 
 export default function TopBar() {

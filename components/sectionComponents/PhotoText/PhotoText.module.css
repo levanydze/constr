@@ -1,0 +1,58 @@
+.photoTextWrapper {
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  max-width: 1200px;
+}
+
+.photoTextWrapper img {
+  width: 50%;
+  height: auto;
+}
+
+.textDiv {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textDiv h2 {
+}
+.textDiv h1 {
+}
+.textDiv p {
+  margin: 30px 0;
+}
+.textDiv h3 {
+  padding-bottom: 30px;
+}
+.textDiv h4 {
+}
+
+@media (max-width: 600px) {
+  .photoTextWrapper {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .photoTextWrapper img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .textDiv {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .textDiv p {
+    margin: 30px auto;
+  }
+  .textDiv h2 {
+    margin-top: 40px;
+  }
+  .textDiv h4 {
+    margin-bottom: 40px;
+  }
+}

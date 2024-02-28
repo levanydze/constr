@@ -1,0 +1,12 @@
+.sections {
+  width: 25%;
+}
+
+.email {
+  color: var(--color1);
+  margin: 15px 0;
+}
+
+.contactDiv {
+  padding-bottom: 30px;
+}

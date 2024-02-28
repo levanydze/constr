@@ -30,11 +30,9 @@
 .textDiv img {
   margin: 0 auto;
   padding-bottom: 20px;
+  object-fit: cover;
 }
 
-.textDiv h2 {
-  font-family: var(--font1);
-}
 .textDiv p {
   margin: 20px auto;
 }
@@ -55,12 +53,9 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .image {
     min-height: 400px;
-  }
-  .textDiv h5 {
-    font-size: 14px;
   }
   .textDiv p {
     margin: 10px auto;

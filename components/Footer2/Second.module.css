@@ -1,0 +1,14 @@
+.menuWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: capitalize;
+}
+
+.reserv {
+  color: var(--primaryColor);
+}
+.menu {
+  display: flex;
+  color: var(--textLight);
+}
