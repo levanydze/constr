@@ -37,9 +37,8 @@ const MenuDetails: React.FC<MenuDetailsProps> = ({ menuId }) => {
 
     fetchData();
 
-    // Cleanup function
     return () => {
-      setData(null); // Reset data when component unmounts
+      setData(null);
     };
   }, [menuId]);
 
