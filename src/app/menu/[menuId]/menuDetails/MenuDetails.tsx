@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import styles from "./menuDetails.module.css";
+import styles from "./MenuDetails.module.css";
 import Image from "next/image";
 import { getData } from "../../../../../lib/DataFetch";
 

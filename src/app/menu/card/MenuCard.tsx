@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./menuCard.module.css";
+import styles from "./MenuCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
