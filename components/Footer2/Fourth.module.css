@@ -6,6 +6,10 @@
 }
 .imageWrapper img {
   margin-bottom: 5%;
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  background-color: var(--color1);
 }
 
 .wrapper p {

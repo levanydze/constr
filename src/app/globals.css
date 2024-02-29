@@ -60,7 +60,23 @@
   ); /* signature font not readable hand writting or something like that)*/
 }
 
+.menuTags {
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  margin: auto 0;
+  color: var(--textLight);
+  line-height: 10px;
+}
+
+.signature {
+  font-family: var(--font3);
+  font-size: 60px;
+}
 /* text color classes */
+
 .textLight {
   color: var(--textLight);
 }
@@ -143,9 +159,4 @@
 .title10 {
   font-size: 55px;
   font-weight: 700;
-}
-
-.signature {
-  font-family: var(--font3);
-  font-size: 60px;
 }

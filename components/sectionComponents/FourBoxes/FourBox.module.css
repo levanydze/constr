@@ -11,6 +11,10 @@
   margin: 20px 0;
 }
 
+.FourBoxMainWrapper img {
+  padding-top: 50px;
+}
+
 .FourBoxMainWrapper div,
 .FourBoxMainWrapper a {
   width: 25%;
@@ -19,7 +23,6 @@
   align-items: center;
   text-align: center;
   height: 300px;
-  justify-content: center;
   border: 1px solid var(--gray3);
   border-right: none;
 }

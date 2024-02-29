@@ -1,5 +1,3 @@
-"use client";
-import React, { useState, useEffect } from "react";
 import styles from "./MenuDetails.module.css";
 import Image from "next/image";
 import { getData } from "../../../../../lib/DataFetch";
@@ -8,7 +6,7 @@ interface MenuDetailsProps {
   menuId: string;
 }
 
-interface MenuData {
+interface MenuDataProps {
   name: string;
   image: string;
   ingredients: string;
@@ -22,29 +20,8 @@ interface MenuData {
   price: string;
 }
 
-const MenuDetails: React.FC<MenuDetailsProps> = ({ menuId }) => {
-  const [data, setData] = useState<MenuData | null>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const menuData: MenuData = await getData(menuId);
-        setData(menuData);
-      } catch (error) {
-        console.error("Error fetching menu details:", error);
-      }
-    };
-
-    fetchData();
-
-    return () => {
-      setData(null);
-    };
-  }, [menuId]);
-
-  if (!data) {
-    return <div>Loading...</div>;
-  }
+export default async function MenuDetails({ menuId }: MenuDetailsProps) {
+  const data: MenuDataProps = await getData(menuId);
 
   return (
     <div className={styles.menuDetailsWrapper}>
@@ -58,21 +35,33 @@ const MenuDetails: React.FC<MenuDetailsProps> = ({ menuId }) => {
         />
       </div>
       <div className={styles.infoWrapper}>
-        <h1>{data.name}</h1>
-        <h2 className="text1">INGREDIENTS: {data.ingredients}</h2>
-        <h3 className="text1">{data.description}</h3>
-        <h4>{data.portions}</h4>
+        <h1 className="title6 font1 color1">{data.name}</h1>
+        <h2 className="title2 font1 textLight">
+          INGREDIENTS: {data.ingredients}
+        </h2>
+        <h3 className="text1 textMedium">{data.description}</h3>
+        <h4 className="textLight title1 font1">{data.portions}</h4>
         <div className={styles.specifications}>
-          {data.special ? <p className={styles.special}>special</p> : null}
-          {data.season ? <p className={styles.season}>season</p> : null}
-          {data.vegan ? <p className={styles.vegan}>vegan</p> : null}
-          {data.spicy ? <p className={styles.spicy}>spicy</p> : null}
-          {data.newItem ? <p className={styles.newItem}>new</p> : null}
+          {data.special ? (
+            <p className={`menuTags ${styles.special}`}>special</p>
+          ) : null}
+          {data.season ? (
+            <p className={`menuTags ${styles.season}`}>season</p>
+          ) : null}
+          {data.vegan ? (
+            <p className={`menuTags ${styles.vegan}`}>vegan</p>
+          ) : null}
+          {data.spicy ? (
+            <p className={`menuTags ${styles.spicy}`}>spicy</p>
+          ) : null}
+          {data.newItem ? (
+            <p className={`menuTags ${styles.newItem}`}>new</p>
+          ) : null}
         </div>
-        <h4 className={styles.price}>Price: {data.price} Sek</h4>
+        <h4 className={`font1 textLight title3 ${styles.price}`}>
+          Price: {data.price} Sek
+        </h4>
       </div>
     </div>
   );
-};
-
-export default MenuDetails;
+}

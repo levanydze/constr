@@ -21,7 +21,7 @@ export default function PhotoText({
     <div className={styles.photoTextWrapper}>
       <Image src={image} height={1500} width={1500} alt={image} />
       <div className={styles.textDiv}>
-        <h2 className="signature">{title1}</h2>
+        <h2 className="signature color1">{title1}</h2>
         <h1 className="title4">{title2}</h1>
         <p className="twoLines"></p>
         <h3 className="text1 textMedium">{text}</h3>

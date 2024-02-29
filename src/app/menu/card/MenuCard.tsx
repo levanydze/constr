@@ -8,11 +8,11 @@ interface MenuCardProps {
   name: string;
   ingredients: string;
   portions: string;
-  special: string;
-  season: string;
-  vegan: string;
-  spicy: string;
-  newItem: string;
+  special: boolean;
+  season: boolean;
+  vegan: boolean;
+  spicy: boolean;
+  newItem: boolean;
   price: string;
   id: string;
 }
@@ -41,18 +41,18 @@ export default function MenuCard({
           <p className={`${styles.dotted}`}></p>
           <h6>{price} sek</h6>
         </div>
-        <h2 className=" title0 font1 textMedium">
+        <h2 className="title0 font1 textMedium">
           {ingredients.length > 40
             ? ingredients.substring(0, 40) + "..."
             : ingredients}
         </h2>
         <div className={styles.details}>
-          {portions ? <h5 className="title0 font1">{portions}</h5> : ""}
-          {vegan ? <p className={styles.vegan}>VEGAN</p> : ""}
-          {special ? <p className={styles.special}>SPECIAL</p> : ""}
-          {season ? <p className={styles.season}>SEASON</p> : ""}
-          {spicy ? <p className={styles.spicy}>SPICY</p> : ""}
-          {newItem ? <p className={styles.newItem}>NEW</p> : ""}
+          {portions && <h5 className="title0 font1">{portions}</h5>}
+          {vegan && <p className={`menuTags ${styles.vegan}`}>VEGAN</p>}
+          {special && <p className={`menuTags ${styles.special}`}>SPECIAL</p>}
+          {season && <p className={`menuTags ${styles.season}`}>SEASON</p>}
+          {spicy && <p className={`menuTags ${styles.spicy}`}>SPICY</p>}
+          {newItem && <p className={`menuTags ${styles.newItem}`}>NEW</p>}
         </div>
       </div>
     </div>

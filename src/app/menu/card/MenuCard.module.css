@@ -60,17 +60,6 @@
   height: 18px;
 }
 
-.details p {
-  font-size: 10px;
-  letter-spacing: 1px;
-  padding: 5px;
-  border-radius: 5px;
-  font-weight: 500;
-  margin: auto 0;
-  color: var(--textLight);
-  line-height: 10px;
-}
-
 .vegan {
   background-color: var(--vegan);
 }

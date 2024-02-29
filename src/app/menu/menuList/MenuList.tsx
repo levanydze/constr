@@ -1,23 +1,29 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./MenuList.module.css";
 import MenuCard from "../card/MenuCard";
 import { getDatas } from "../../../../lib/DataFetch";
+
+interface MenuItem {
+  id: string;
+  name: string;
+  image: string;
+  ingredients: string;
+  portions: string;
+  special: boolean;
+  season: boolean;
+  vegan: boolean;
+  spicy: boolean;
+  newItem: boolean;
+  price: string;
+  [key: string]: any;
+}
 
 interface MenuListProps {
   category: string;
 }
 
-export default function MenuList({ category }: MenuListProps) {
-  const [data, setData] = useState<any[]>([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const fetchedData = await getDatas();
-      setData(fetchedData);
-    }
-    fetchData();
-  }, []);
+export default async function MenuList({ category }: MenuListProps) {
+  const data: MenuItem[] = await getDatas();
 
   return (
     <div className={` container1 ${styles.menuWrapper}`}>
@@ -31,7 +37,7 @@ export default function MenuList({ category }: MenuListProps) {
       <div className={styles.cardsMapWrap}>
         {data
           .filter((item) => item[category])
-          .map((item, index) => (
+          .map((item: MenuItem, index) => (
             <div key={index}>{item && <MenuCard {...item} />}</div>
           ))}
       </div>
