@@ -30,6 +30,7 @@ const great = Great_Vibes({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://constr-rouge.vercel.app/"),
   title: {
     // if i write absolute title it will ignore template title
     // absolute: "",
@@ -50,9 +51,9 @@ export default function RootLayout({
       <body
         className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable}`}
       >
-        {/* <Header /> */}
+        <Header />
         {/* <Header2 /> */}
-        <Heder3 />
+        {/* <Heder3 /> */}
         {children}
         <Footer2 />
         {/* <Footer /> */}

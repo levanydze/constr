@@ -7,7 +7,12 @@ export default function ProjectsPage() {
 
   return (
     <div>
-      <PageHeadImage value="Contact Us" image={headImage} short={false} />
+      <PageHeadImage
+        value="Projects
+      "
+        image={headImage}
+        short={false}
+      />
     </div>
   );
 }

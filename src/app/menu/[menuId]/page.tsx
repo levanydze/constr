@@ -22,9 +22,12 @@ export const generateMetadata = async ({
 }: Props): Promise<Metadata> => {
   try {
     const data = await getData(params.menuId);
-    const title = data.name;
+    const name = data.name;
     return {
-      title: title,
+      title: name,
+      alternates: {
+        canonical: `/menu/${data.menuId}levanie`,
+      },
     };
   } catch (error) {
     console.error("Error fetching data:", error);
