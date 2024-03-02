@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  margin: 0 auto 200px auto;
+  margin: 0 auto 50px auto;
 }
 .formSent {
   color: var(--green);

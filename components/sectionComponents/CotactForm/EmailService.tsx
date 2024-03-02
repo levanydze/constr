@@ -20,10 +20,10 @@ export const sendEmail =
 
       emailjs
         .sendForm(
-          "service_u6gjg6s",
-          "template_jsv5qfx",
+          process.env.NEXT_PUBLIC_EMAIL_SERVICE as string,
+          process.env.NEXT_PUBLIC_EMAIL_TEMPLATE as string,
           form.current,
-          "y8nREYl_1OCsl1rBw"
+          process.env.NEXT_PUBLIC_EMAIL_FORM
         )
         .then(
           (response: EmailJSResponseStatus) => {

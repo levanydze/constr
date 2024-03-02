@@ -37,10 +37,19 @@
   margin: 20px auto;
 }
 
+@media (max-width: 800px) {
+  .textDiv p {
+    margin: 10px auto;
+  }
+  .textDiv {
+    padding: 25px;
+  }
+}
+
 @media (max-width: 700px) {
   .TextIntoPhotoWrapper {
     flex-direction: column;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
   .textDivWrapper {
     width: 70%;
@@ -53,17 +62,11 @@
   }
 }
 
-@media (max-width: 800px) {
-  .image {
-    min-height: 400px;
-  }
-  .textDiv p {
-    margin: 10px auto;
-  }
+@media (max-width: 500px) {
   .textDiv {
-    padding: 25px;
+    padding: 10px;
   }
   .TextIntoPhotoWrapper {
-    margin-bottom: 140px;
+    margin-bottom: 100px;
   }
 }

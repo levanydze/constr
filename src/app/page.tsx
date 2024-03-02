@@ -14,7 +14,7 @@ export default function Home() {
       <ImageTextButton />
       <div className="measaureLine"></div>
       <PhotoText
-        image={guy}
+        image={textIntoPhoto}
         title1="Leader's Word"
         title2="MADE FOR FUTURE"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum beatae, sapiente dolorem veniam doloribus eum harum rerum nemo pariatur numquam repellat dicta non architecto voluptas quasi molestiae! Commodi, molestiae?"

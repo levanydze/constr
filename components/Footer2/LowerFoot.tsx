@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function LowerFoot() {
   return (
     <div className={styles.lowerWrap}>
-      <p className={` ${styles.heart} ${styles.dimmed}`}>
+      <p className={` ${styles.heartName} ${styles.dimmed}`}>
         Created with <FaHeart className={styles.heart} />
         by
       </p>

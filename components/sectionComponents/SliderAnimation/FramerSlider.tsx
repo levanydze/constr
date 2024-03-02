@@ -5,8 +5,10 @@ import styles from "./FramerSlider.module.css";
 
 function FramerSlider() {
   return (
-    <div className={styles.exampleContainer}>
-      <Example />
+    <div className="">
+      <div className={styles.exampleContainer}>
+        <Example />
+      </div>
     </div>
   );
 }

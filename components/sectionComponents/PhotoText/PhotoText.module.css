@@ -10,6 +10,7 @@
 .photoTextWrapper img {
   width: 50%;
   height: auto;
+  object-fit: cover;
 }
 
 .textDiv {
@@ -19,17 +20,11 @@
   justify-content: center;
 }
 
-.textDiv h2 {
-}
-.textDiv h1 {
-}
 .textDiv p {
   margin: 30px 0;
 }
 .textDiv h3 {
   padding-bottom: 30px;
-}
-.textDiv h4 {
 }
 
 @media (max-width: 600px) {

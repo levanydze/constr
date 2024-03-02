@@ -5,7 +5,7 @@ import MenuList from "./menuList/MenuList";
 import LoadingComponent from "../../../components/sectionComponents/error-loading-notFound/LoadingComponent";
 
 export const metadata = {
-  title: "Menu | ChaCha Restaurant",
+  title: "Menu ",
   description: "Delicious Food",
 };
 

@@ -3,6 +3,10 @@ import PageHeadImage from "../../../components/sectionComponents/PageHeadImage/P
 import imagesJson from "../../../json/images.json";
 import FramerSlider from "../../../components/sectionComponents/SliderAnimation/FramerSlider";
 
+export const metadata = {
+  title: "about levani",
+};
+
 export default function AboutPage() {
   const { headImage } = imagesJson;
 

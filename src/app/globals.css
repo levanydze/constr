@@ -11,6 +11,18 @@
 }
 
 :root {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
   --color1: #d6a51f; /*pripary bright color */
   --color2: #002e5b; /* secondary dark color*/
   --color3: red; /* not sure */
@@ -39,8 +51,8 @@
   --gray5: rgb(150, 150, 150);
   --gray4: rgb(180, 180, 180);
   --gray3: rgb(200, 200, 200);
-  --gray2: rgb(230, 230, 230);
-  --gray1: rgb(255, 255, 255);
+  --gray2: rgb(220, 220, 220);
+  --gray1: rgb(245, 245, 245);
 
   /* some additional colors*/
   --green: rgb(40, 186, 40);
@@ -57,10 +69,11 @@
   font-family: var(--font2); /* fancy font can be not so much readable*/
   font-family: var(
     --font3
-  ); /* signature font not readable hand writting or something like that)*/
+  ); /* signature font not readable hand writting etc...)*/
 }
 
 .menuTags {
+  /* restaurant menu tags like spicy or new or vegan.... needs to add bg color */
   font-size: 10px;
   letter-spacing: 1px;
   padding: 5px;
@@ -73,7 +86,6 @@
 
 .signature {
   font-family: var(--font3);
-  font-size: 60px;
 }
 /* text color classes */
 
@@ -109,6 +121,16 @@
   font-size: 15px;
   font-family: var(--font1);
   letter-spacing: 1px;
+}
+@media (max-width: 1000px) {
+  .text1 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .text1 {
+    font-size: 13px;
+  }
 }
 
 .title0 {

@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
 import styles from "./BurgerNav.module.css";
-import Button from "../../components/miniComponents/Button2";
+import Button from "../../miniComponents/Button2";
 
 export default function BurgerNav() {
   const [isNavOpen, setIsNavOpen] = useState(false);

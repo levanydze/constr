@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Header2.module.css";
-import Navigation from "./Navigation";
-import BurgerNav from "./BurgerNav";
-import Logo from "./Logo";
+import Navigation from "./components/Navigation";
+import BurgerNav from "./components/BurgerNav";
+import Logo from "./components/Logo";
 
 export default function Header() {
   return (

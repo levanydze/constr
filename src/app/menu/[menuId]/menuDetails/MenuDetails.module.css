@@ -15,6 +15,7 @@
   padding: 5px;
   width: 400px;
   height: 400px;
+  min-width: 400px;
 }
 
 .infoWrapper {
@@ -64,8 +65,12 @@
   .menuDetailsWrapper {
     flex-direction: column-reverse;
   }
+
   .imgWrapper {
     margin: 0 auto;
+  }
+  .imgWrapper img {
+    min-width: 0px;
   }
   .infoWrapper {
     margin: 0 auto 50px auto;
@@ -76,9 +81,5 @@
 @media (max-width: 800px) {
   .infoWrapper {
     width: 80%;
-  }
-
-  .imgWrapper img {
-    width: 100%;
   }
 }

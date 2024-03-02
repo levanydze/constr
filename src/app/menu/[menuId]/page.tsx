@@ -6,12 +6,30 @@ import styles from "./page.module.css";
 import MenuDetails from "./menuDetails/MenuDetails";
 import PageHeadImage from "../../../../components/sectionComponents/PageHeadImage/PageHeadImage";
 import LoadingComponent from "../../../../components/sectionComponents/error-loading-notFound/LoadingComponent";
-
 import imageJson from "../../../../json/images.json";
 
-export const metadata: { title: string; description: string } = {
-  title: "Our Delicious Food | ChaCha Restaurant",
-  description: "Delicious Food",
+import { getData } from "../../../../lib/DataFetch";
+
+// metadata
+import { Metadata } from "next";
+type Props = {
+  params: {
+    menuId: string;
+  };
+};
+export const generateMetadata = async ({
+  params,
+}: Props): Promise<Metadata> => {
+  try {
+    const data = await getData(params.menuId);
+    const title = data.name;
+    return {
+      title: title,
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {};
+  }
 };
 
 interface MenuDetailsPageProps {

@@ -1,0 +1,41 @@
+.mainNavWrap {
+  padding: 20px 0;
+  color: var(--textLight);
+}
+.listWrap {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+.navLink {
+  color: var(--textLight);
+  font-weight: 400;
+  transition: 0.3s;
+}
+.navLink:hover {
+  color: var(--color1);
+}
+
+.active {
+  color: var(--color1);
+}
+
+/* @media (max-width: 720) {
+} */
+
+@media (max-width: 650px) {
+  .listWrap {
+    gap: 15px;
+  }
+  .listWrap li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .mainNavWrap {
+    display: none;
+  }
+}

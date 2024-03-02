@@ -16,7 +16,7 @@ export default function PageHeadImage({
   return (
     <div className={styles.mainWrapper}>
       <div className={styles.overlayWrapper}>
-        <h1 className="title6 font1">{value}</h1>
+        <h1 className="title5 ">{value}</h1>
       </div>
       <div className={styles.imageDarkLayer}></div>
       <Image

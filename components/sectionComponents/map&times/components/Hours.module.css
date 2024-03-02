@@ -1,0 +1,79 @@
+.hoursMainWrap {
+  background-color: var(--color2);
+  width: 30%;
+  padding: 10px;
+  height: 100%;
+  color: var(--textLight);
+}
+.hoursWrap {
+  border: 1px solid white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.hoursHead {
+  height: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hoursHead h4 {
+  font-family: var(--font1);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.hoursHead h3 {
+  font-family: var(--font2);
+  color: var(--color1);
+}
+.hoursTimes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+}
+.timesDay {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.day {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.dotted {
+  border-bottom: 1px dotted var(--textMedium);
+  flex: 1;
+}
+.hours {
+  text-transform: uppercase;
+}
+.closed {
+  color: var(--red);
+  font-weight: 500;
+}
+.hoursReserv {
+  height: 15%;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: var(--font1);
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .hoursMainWrap {
+    width: 45%;
+  }
+}
+
+@media (max-width: 650px) {
+  .hoursMainWrap {
+    width: 90%;
+  }
+}

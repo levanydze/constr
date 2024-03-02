@@ -1,0 +1,43 @@
+.textWrap {
+  background-color: var(--backgroundLight);
+  width: 100%;
+  border: 1px solid var(--gray2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.textWrap p {
+  font-size: 13px;
+}
+
+.textWrap h2 {
+  font-family: var(--font1);
+  color: var(--color2);
+}
+.textWrap img {
+  margin: 0 auto;
+}
+
+.addres {
+  color: var(--textMedium);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.email {
+  color: black;
+}
+.number {
+  color: var(--red);
+}
+
+@media (max-width: 650px) {
+  .textWrap {
+    padding: 20px;
+  }
+}
