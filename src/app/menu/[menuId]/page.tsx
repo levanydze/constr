@@ -13,6 +13,9 @@ import { getData } from "../../../../lib/DataFetch";
 // metadata
 import { Metadata } from "next";
 type Props = {
+  serachParams: {
+    name: string;
+  };
   params: {
     menuId: string;
   };
@@ -26,7 +29,7 @@ export const generateMetadata = async ({
     return {
       title: name,
       alternates: {
-        canonical: `/menu/${data.name}levanie`,
+        canonical: `/menu/${data.name}levanie-meorename`,
       },
     };
   } catch (error) {

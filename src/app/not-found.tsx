@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import PageHeadImage from "../../components/sectionComponents/PageHeadImage/PageHeadImage";
@@ -10,6 +11,7 @@ export default function error() {
     <>
       <PageHeadImage short image={headImage} value="Something Went Wrong " />
       <NotFoundComponent />
+      <h6 className="title1 auto color1"></h6>
     </>
   );
 }

@@ -32,7 +32,7 @@ export default function MenuCard({
 }: MenuCardProps) {
   return (
     <div className={styles.cardWrapper}>
-      <Link href={`/menu/${id}`}>
+      <Link href={`/menu/${name}levanie-meorename`}>
         <Image src={image} width={600} height={600} alt={name}></Image>
       </Link>
       <div className={styles.cardInfoDiv}>

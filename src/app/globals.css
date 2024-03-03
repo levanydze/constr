@@ -89,6 +89,9 @@
 }
 /* text color classes */
 
+.auto {
+  margin: 0 auto;
+}
 .textLight {
   color: var(--textLight);
 }
