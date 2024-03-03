@@ -51,9 +51,9 @@ export default function RootLayout({
       <body
         className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable}`}
       >
-        <Header />
+        {/* <Header /> */}
         {/* <Header2 /> */}
-        {/* <Heder3 /> */}
+        <Heder3 />
         {children}
         <Footer2 />
         {/* <Footer /> */}

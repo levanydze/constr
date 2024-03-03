@@ -46,7 +46,7 @@ export default function MenuDetailsPage({ params }: MenuDetailsPageProps) {
 
   return (
     <div className={styles.pageDetailWrapper}>
-      <PageHeadImage image={headImage} short={true} value="Menu" />
+      <PageHeadImage image={headImage} short={true} value="Yummy Yummy" />
       <div className={styles.lowerDiv}>
         <Link href="./">
           <RiArrowGoBackFill className={styles.goBackIcon} />
