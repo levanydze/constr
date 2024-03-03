@@ -1,11 +1,9 @@
 .mainNavWrap {
-  padding: 20px;
   color: var(--textLight);
-  position: absolute;
   z-index: 10;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: end;
+  width: 80%;
 }
 .listWrap {
   display: flex;

@@ -1,14 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import styles from "./Navigation.module.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoClose } from "react-icons/io5";
-import Logo from "../header2/components/Logo";
-import { navItems } from "./NavArray";
-import BurgerNav from "./BurgerNav";
-import StandartNav from "./StandartNav";
+import Logo from "../miniComponents/Logo/Logo";
+import BurgerNav from "./Navigations/BurgerNav";
+import StandartNav from "./Navigations/StandartNav";
 
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -21,6 +16,7 @@ const Navigation = () => {
 
   return (
     <div className={styles.navigationWrapper}>
+      <Logo onClose={navClose} />
       <StandartNav />
       <BurgerNav
         navClose={navClose}

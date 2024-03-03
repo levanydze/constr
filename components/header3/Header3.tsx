@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
-import Logo from "../header2/components/Logo";
+import Logo from "../miniComponents/Logo/Logo";
 import styles from "./Header3.module.css";
 
 export default function Heder3() {

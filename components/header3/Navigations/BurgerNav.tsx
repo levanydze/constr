@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./BurgenNav.module.css";
-import { navItems } from "./NavArray";
-import Logo from "../header2/components/Logo";
+import { navItems } from "../NavArray";
+import Logo from "../../miniComponents/Logo/Logo";
 import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -46,7 +46,6 @@ export default function BurgerNav({
         </ul>
       </div>
       <div className={styles.logoBurgerDiv}>
-        <Logo onClose={navClose} />
         {!isNavOpen ? (
           <div className={styles.openCloseIconDiv}>
             <GiHamburgerMenu
