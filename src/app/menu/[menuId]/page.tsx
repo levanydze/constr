@@ -26,7 +26,7 @@ export const generateMetadata = async ({
     return {
       title: name,
       alternates: {
-        canonical: `/menu/${data.menuId}levanie`,
+        canonical: `/menu/${data.name}levanie`,
       },
     };
   } catch (error) {
