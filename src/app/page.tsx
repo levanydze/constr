@@ -12,7 +12,7 @@ export default function Home() {
   const { textIntoPhoto, headImage, guy, olivOilApple } = imagesJson;
   return (
     <main>
-      <HomePageMain image={olivOilApple} alt="headImage" outline={false} />
+      <HomePageMain image={olivOilApple} alt="headImage" outline={true} />
       <ImageTextButton
         image={headImage}
         title="Professional Tiling & Painting Services"
