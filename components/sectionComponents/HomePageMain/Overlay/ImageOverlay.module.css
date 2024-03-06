@@ -1,0 +1,88 @@
+.overlayWrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: var(--textLight);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.empty {
+  width: 100%;
+  min-height: 50px;
+}
+.middle {
+  text-align: center;
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  z-index: 2221;
+  justify-content: center;
+  gap: 3%;
+  margin-top: -10%;
+}
+
+.middle h3 {
+  line-height: 25px;
+  letter-spacing: 4px;
+}
+.middle h4 {
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding: 20px 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3% 3% 3%;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.phoneNumber {
+  font-family: var(--font1);
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: flex;
+  margin: auto 0;
+}
+.phoneIcon {
+  font-size: 22px;
+  margin-right: 20px;
+  padding-top: 5px;
+}
+
+@media (max-width: 950px) {
+  .middle {
+    /* width: 80%; */
+  }
+
+  .middle h3 {
+    letter-spacing: 2px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .middle {
+    width: 95%;
+  }
+}
+@media (max-width: 450px) {
+  .bottom {
+    /* display: none; */
+  }
+}

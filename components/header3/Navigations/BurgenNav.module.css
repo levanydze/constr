@@ -1,6 +1,5 @@
-.burgerWrapper {
-  position: relative;
-}
+/* .burgerWrapper {
+} */
 
 .burgerMenu {
   width: 100%;
@@ -22,6 +21,7 @@
   width: 100%;
   text-align: center;
   transition: 0.5s cubic-bezier(1, 0.23, 0.59, 1.12);
+  z-index: 99;
 }
 .burgerLi {
   padding: 15px 0;

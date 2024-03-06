@@ -45,20 +45,18 @@ export default function BurgerNav({
           ))}
         </ul>
       </div>
-      <div className={styles.logoBurgerDiv}>
-        {!isNavOpen ? (
-          <div className={styles.openCloseIconDiv}>
-            <GiHamburgerMenu
-              className={styles.openCloseIcon}
-              onClick={navToggler}
-            />
-          </div>
-        ) : (
-          <div className={styles.openCloseIconDiv}>
-            <IoClose className={styles.openCloseIcon} onClick={navToggler} />
-          </div>
-        )}
-      </div>
+      {!isNavOpen ? (
+        <div className={styles.openCloseIconDiv}>
+          <GiHamburgerMenu
+            className={styles.openCloseIcon}
+            onClick={navToggler}
+          />
+        </div>
+      ) : (
+        <div className={styles.openCloseIconDiv}>
+          <IoClose className={styles.openCloseIcon} onClick={navToggler} />
+        </div>
+      )}
     </div>
   );
 }

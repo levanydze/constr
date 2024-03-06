@@ -11,14 +11,6 @@
   padding: 50px 0;
 }
 
-.textWrap p {
-  font-size: 13px;
-}
-
-.textWrap h2 {
-  font-family: var(--font1);
-  color: var(--color2);
-}
 .textWrap img {
   margin: 0 auto;
 }

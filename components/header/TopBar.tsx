@@ -10,8 +10,8 @@ export default function TopBar() {
       <div className={styles.blueBar}>
         <div className={styles.wrapper}>
           <div className={styles.textInBlue}>
-            <p className="text3">
-              Toll Free <span className="text4">{phoneNumber}</span>
+            <p className="title1 font1 textMedium ">
+              Toll Free <span className="text1  textLight">{phoneNumber}</span>
             </p>
           </div>
           <SocialMedia />

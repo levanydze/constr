@@ -24,7 +24,7 @@
 
 /* button2 START */
 .button2 {
-  border: 1px solid var(--color2);
+  border: 1px solid var(--color1);
   background-color: var(--color2);
   width: max-content;
   padding: 10px 15px;

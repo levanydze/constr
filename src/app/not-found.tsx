@@ -12,6 +12,9 @@ export default function error() {
       <PageHeadImage short image={headImage} value="Something Went Wrong " />
       <NotFoundComponent />
       <h6 className="title1 auto color1"></h6>
+      <Link className="title3 button1 " href="./">
+        Go Back
+      </Link>
     </>
   );
 }

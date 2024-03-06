@@ -1,0 +1,12 @@
+.socialMediaIcon {
+  border: 1px solid rgb(136, 136, 136);
+  padding: 8px;
+  font-size: 40px;
+  cursor: pointer;
+  color: var(--textLight);
+}
+
+.socialMedia {
+  display: flex;
+  gap: 10px;
+}

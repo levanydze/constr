@@ -34,11 +34,12 @@ export const metadata: Metadata = {
   title: {
     // if i write absolute title it will ignore template title
     // absolute: "",
-    default: "Some default title for any page",
+    default: "ChaCha Restaurant AB",
     //  instead of that  --> %s <--  i can write title on any page.  what i write after --> | <-- it will be weiten after title
-    template: "%s | ChaCha Construction AB",
+    template: "%s | ChaCha Restaurant AB",
   },
-  description: "We Buid Your Dreams",
+  description:
+    "We Buid Your Dreams Schools and all constructions that can be done",
 };
 
 export default function RootLayout({

@@ -40,6 +40,14 @@ export default function Nav() {
         >
           CONTACT
         </Link>
+        <Link
+          className={`${styles.link} ${
+            pathname.startsWith("/menu") ? styles.activeLink : ""
+          }`}
+          href={"/menu"}
+        >
+          MENU
+        </Link>
       </ul>
     </nav>
   );

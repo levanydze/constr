@@ -5,13 +5,21 @@ import TextIntoPhoto from "../../components/sectionComponents/TextIntiPhoto/Text
 import imagesJson from "../../json/images.json";
 import assetsJson from "../../json/assets.json";
 import PhotoText from "../../components/sectionComponents/PhotoText/PhotoText";
+import HomePageMain from "../../components/sectionComponents/HomePageMain/HomePageMain";
 
 export default function Home() {
   const { houseIcon, chair } = assetsJson;
-  const { textIntoPhoto, headImage, guy } = imagesJson;
+  const { textIntoPhoto, headImage, guy, olivOilApple } = imagesJson;
   return (
     <main>
-      <ImageTextButton />
+      <HomePageMain image={olivOilApple} alt="headImage" outline={false} />
+      <ImageTextButton
+        image={headImage}
+        title="Professional Tiling & Painting Services"
+        text="We combine quality workmanship, superior knowledge and low prices to
+            provide you with service unmatched by our competitors."
+        button="Get A Qoute"
+      />
       <div className="measaureLine"></div>
       <PhotoText
         image={textIntoPhoto}
@@ -20,7 +28,7 @@ export default function Home() {
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum beatae, sapiente dolorem veniam doloribus eum harum rerum nemo pariatur numquam repellat dicta non architecto voluptas quasi molestiae! Commodi, molestiae?"
         sign="Levani Levanidze"
       />
-      <GuyWithServices />
+      <GuyWithServices image={guy} />
       <TextIntoPhoto
         TextIntoPhotoIcon={houseIcon}
         TextIntoPhotoImage={textIntoPhoto}

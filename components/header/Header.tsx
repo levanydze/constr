@@ -23,7 +23,7 @@ function Header() {
       <TopBar />
       <div className="measaureLine"></div>
       <div className={styles.logoNav}>
-        <Link className="title5 font2 color1" href="./" onClick={handleClose}>
+        <Link className="title5 font2 textDark" href="./" onClick={handleClose}>
           {name}
         </Link>
         <Nav />

@@ -5,8 +5,11 @@ import imagesJson from "../../../json/images.json";
 import assetsJson from "../../../json/assets.json";
 import EachService from "./EachService/EachService";
 
-export default function GuyWithServices() {
-  const { guy } = imagesJson;
+interface GuyWithServicesProps {
+  image: string;
+}
+
+export default function GuyWithServices({ image }: GuyWithServicesProps) {
   const { houseIcon, paintIcon, roofIcon } = assetsJson;
   return (
     <div>
@@ -23,7 +26,7 @@ export default function GuyWithServices() {
           </div>
           <Image
             className={styles.image}
-            src={guy}
+            src={image}
             width={700}
             height={1200}
             alt="construction guy"

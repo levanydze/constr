@@ -4,7 +4,7 @@ import imagesJson from "../../../json/images.json";
 import FramerSlider from "../../../components/sectionComponents/SliderAnimation/FramerSlider";
 
 export const metadata = {
-  title: "about levani",
+  title: "About",
 };
 
 export default function AboutPage() {

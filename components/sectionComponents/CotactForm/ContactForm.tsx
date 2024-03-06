@@ -16,8 +16,8 @@ const ContactForm: React.FC = () => {
   return (
     <>
       <div className={styles.formHead}>
-        <h2 className="title3 color1 ">Contact Us</h2>
-        <h3 className="title4 font1">For Better Experience</h3>
+        <h2 className="title2 color1 ">Contact Us</h2>
+        <h3 className="title6 ">For Better Experience</h3>
         <p className="twoLines"></p>
       </div>
       <form

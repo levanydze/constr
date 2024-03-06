@@ -1,11 +1,9 @@
 .logoWrap {
   text-align: center;
   line-height: 20px;
-  font-family: var(--font2);
   z-index: 100;
 }
 .logoWrap h1 {
-  color: var(--color1);
   font-size: 18px;
 }
 .logoWrap h3 {
