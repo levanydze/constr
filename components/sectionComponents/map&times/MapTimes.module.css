@@ -22,6 +22,7 @@
   height: 450px;
   height: 100%;
   border: none;
+  min-height: 300px;
 }
 @media (max-width: 1300px) {
   .mapAndTimesWrapper {

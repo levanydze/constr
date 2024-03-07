@@ -4,6 +4,7 @@
   padding: 10px;
   height: 100%;
   color: var(--textLight);
+  min-height: 300px;
 }
 .hoursWrap {
   border: 1px solid white;
