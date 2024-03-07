@@ -71,3 +71,26 @@
     margin-bottom: 100px;
   }
 }
+
+/* ----------------slide animation------------------- */
+
+.slideSide {
+  animation: slideSide linear forwards;
+  animation-timeline: view();
+  animation-range: cover -70% cover 40%;
+}
+@keyframes slideSide {
+  0% {
+    /* opacity: 0; */
+    margin: auto 200px;
+  }
+
+  100% {
+    /* opacity: 1; */
+  }
+}
+@media screen and (max-width: 600px) {
+  .slideSide {
+    animation: none;
+  }
+}

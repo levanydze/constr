@@ -44,7 +44,7 @@ export default function MenuDetailsPage({ params }: MenuDetailsPageProps) {
   const { headImage } = imageJson;
 
   return (
-    <div className={styles.pageDetailWrapper}>
+    <div className={`fadeOut ${styles.pageDetailWrapper}`}>
       <PageHeadImage image={headImage} short={true} value="Yummy Yummy" />
       <div className={styles.lowerDiv}>
         <Link href="./">
