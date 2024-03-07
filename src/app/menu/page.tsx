@@ -12,7 +12,7 @@ export const metadata = {
 export default function MenuPage() {
   const { headImage } = imagesJson;
   return (
-    <div>
+    <div className="fadeOut">
       <PageHeadImage
         value="OUR DELICIOUS MENU"
         image={headImage}

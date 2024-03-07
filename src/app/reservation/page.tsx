@@ -9,7 +9,7 @@ export default function Reservation() {
   const { headImage } = imagesJson;
 
   return (
-    <div>
+    <div className="fadeOut">
       <PageHeadImage value="RESERV A TABLE" image={headImage} short={false} />
       <ReservationContactForm />
     </div>

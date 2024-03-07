@@ -1,7 +1,7 @@
 import GuyWithServices from "../../components/sectionComponents/GuyWithServices/GuyWithServices";
 // import ImageTextButton from "../../components/sectionComponents/ImageTextButton/ImageTextButton";
 import FourBox from "../../components/sectionComponents/FourBoxes/FourBox";
-import TextIntoPhoto from "../../components/sectionComponents/TextIntiPhoto/TextIntoPhoto";
+import TextIntoPhoto from "../../components/sectionComponents/TextIntoPhoto/TextIntoPhoto";
 import imagesJson from "../../json/images.json";
 import assetsJson from "../../json/assets.json";
 import PhotoText from "../../components/sectionComponents/PhotoText/PhotoText";
@@ -13,7 +13,7 @@ export default function Home() {
   const { houseIcon, chair } = assetsJson;
   const { textIntoPhoto, chef, headImage, guy, olivOilApple } = imagesJson;
   return (
-    <main>
+    <main className="fadeOut">
       <HomePageMain image={olivOilApple} alt="headImage" outline={true} />
       <PhotoText
         image={chef}

@@ -14,7 +14,7 @@ const ContactForm: React.FC = () => {
   const onSubmit = sendEmail(form, handleEmailSent);
 
   return (
-    <>
+    <div className="container1">
       <div className={styles.formHead}>
         <h2 className="title2 color1 ">Contact Us</h2>
         <h3 className="title6 ">For Better Experience</h3>
@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
       <div className={emailSent ? styles.formSent : styles.hide}>
         <h6 className="title5"> Thank you for your message</h6>
       </div>
-    </>
+    </div>
   );
 };
 

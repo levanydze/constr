@@ -27,14 +27,14 @@ export default function TextIntoPhoto({
         }`}
       >
         <Image
-          className={styles.image}
+          className={` fadeUp ${styles.image}`}
           src={TextIntoPhotoImage}
           width={1000}
           height={1000}
           alt={alt}
         ></Image>
-        <div className={`slideUp ${styles.textDivWrapper}`}>
-          <div className={styles.textDiv}>
+        <div className={`slideSide ${styles.textDivWrapper}`}>
+          <div className={` ${styles.textDiv}`}>
             <Image
               src={TextIntoPhotoIcon}
               alt="chair"

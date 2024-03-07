@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable} fadeOut `}
+        className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable}  `}
       >
         {/* <Header /> */}
         {/* <Header2 /> */}

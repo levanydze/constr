@@ -79,6 +79,10 @@
 /* containers */
 .container1 {
   padding: 10px;
+  background-color: var(--backgroundLight);
+}
+.container1 div {
+  max-width: 1500px;
 }
 .container2 {
   background-image: url(../../public//assets//white-graysh.jpeg);

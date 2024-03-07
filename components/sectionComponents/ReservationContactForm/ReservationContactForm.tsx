@@ -50,67 +50,69 @@ export default function ReservationContactForm() {
   };
 
   return (
-    <div className={styles.reservationWrapper}>
-      <div className={styles.reservation}>
-        <form
-          className={`${styles.form} ${emailSent ? styles.none : ""}`}
-          ref={form}
-          onSubmit={sendEmail}
-        >
-          <input
-            className={`${styles.input}`}
-            type="text"
-            name="user_name"
-            placeholder="Enter your full name"
-          />
-          <div>
+    <div className="container1">
+      <div className={styles.reservationWrapper}>
+        <div className={styles.reservation}>
+          <form
+            className={`${styles.form} ${emailSent ? styles.none : ""}`}
+            ref={form}
+            onSubmit={sendEmail}
+          >
             <input
               className={`${styles.input}`}
-              type="email"
-              name="user_email"
-              placeholder="Email"
+              type="text"
+              name="user_name"
+              placeholder="Enter your full name"
             />
+            <div>
+              <input
+                className={`${styles.input}`}
+                type="email"
+                name="user_email"
+                placeholder="Email"
+              />
+              <input
+                className={`${styles.input}`}
+                type="tel"
+                name="user_phone"
+                placeholder="Phone number"
+              />
+            </div>
+            <div>
+              <input
+                className={`${styles.input}`}
+                type="date"
+                name="user_date"
+                placeholder="Date"
+              />
+              <input
+                className={`${styles.input}`}
+                type="time"
+                name="user_time"
+                placeholder="Time"
+              />
+            </div>
             <input
               className={`${styles.input}`}
-              type="tel"
-              name="user_phone"
-              placeholder="Phone number"
+              type="text"
+              name="user_quantity"
+              placeholder="Number of people"
             />
+            <textarea
+              className={`${styles.textArea} ${styles.input}`}
+              name="message"
+              placeholder="Any special requirements?"
+            />
+            <input
+              className={` button1 ${styles.buttonSend}`}
+              type="submit"
+              value="Send"
+            />
+          </form>
+          <div className={emailSent ? styles.formSent : styles.hide}>
+            <h6> Thank you for your request</h6>
+            <h5>Wait for our confirmation</h5>
           </div>
-          <div>
-            <input
-              className={`${styles.input}`}
-              type="date"
-              name="user_date"
-              placeholder="Date"
-            />
-            <input
-              className={`${styles.input}`}
-              type="time"
-              name="user_time"
-              placeholder="Time"
-            />
-          </div>
-          <input
-            className={`${styles.input}`}
-            type="text"
-            name="user_quantity"
-            placeholder="Number of people"
-          />
-          <textarea
-            className={`${styles.textArea} ${styles.input}`}
-            name="message"
-            placeholder="Any special requirements?"
-          />
-          <input
-            className={` button1 ${styles.buttonSend}`}
-            type="submit"
-            value="Send"
-          />
-        </form>
-        <div className={emailSent ? styles.formSent : styles.hide}>
-          <h6> Thank you for your request</h6>
-          <h5>Wait for our confirmation</h5>
         </div>
       </div>
     </div>

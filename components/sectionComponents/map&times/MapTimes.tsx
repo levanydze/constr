@@ -7,14 +7,16 @@ import infoJson from "../../../json/info.json";
 export default function MapAndTimes() {
   const { mapLocation } = infoJson;
   return (
-    <div className={styles.mapAndTimesWrapper}>
-      <div className={styles.textMapWrap}>
-        <Text />
-        <div className={styles.mapSide}>
-          <iframe className={styles.mapSide} src={mapLocation}></iframe>
+    <div className="container1">
+      <div className={styles.mapAndTimesWrapper}>
+        <div className={styles.textMapWrap}>
+          <Text />
+          <div className={styles.mapSide}>
+            <iframe className={styles.mapSide} src={mapLocation}></iframe>
+          </div>
         </div>
+        <Hours />
       </div>
-      <Hours />
     </div>
   );
 }

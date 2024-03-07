@@ -11,7 +11,7 @@ export const metadata = {
 export default function AboutPage() {
   const { headImage } = imagesJson;
   return (
-    <div>
+    <div className="fadeOut">
       <PageHeadImage value="ABOUT US" image={headImage} short={true} />
       <FramerSlider />
       <Dashboard />
