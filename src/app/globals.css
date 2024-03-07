@@ -28,14 +28,16 @@
   --color3: red; /* not sure */
 
   /* used for components background*/
-  --backgroundDark: rgba(107, 73, 73, 0);
+  --backgroundDark: rgb(20, 20, 20);
   --backgroundLight: rgb(255, 255, 255);
 
   /* image backgrunds needed*/
   /* here */
 
   /* used for photo overlay to write text over */
+  --overlayLight: rgba(0, 0, 0, 0.218);
   --overlay: rgba(0, 0, 0, 0.355);
+  --overlayDark: rgba(0, 0, 0, 0.508);
 
   /* font colors*/
   --textLight: rgb(255, 255, 255);

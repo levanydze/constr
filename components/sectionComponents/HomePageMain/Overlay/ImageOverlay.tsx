@@ -11,7 +11,7 @@ export default function ImageOverlay() {
     <div className={styles.overlayWrapper}>
       <div className={styles.empty}></div>
       <div className={styles.middle}>
-        <h2 className="title5 color1">Welcome to</h2>
+        <h2 className="title6 color1 font3">Welcome to</h2>
         <h1 className="title10 font2">{name}</h1>
         <h3 className="title6 font2 ">Restaurant</h3>
         <div className="twoLines "></div>

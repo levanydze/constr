@@ -10,7 +10,7 @@ export default function ContactPage() {
   const { headImage } = imagesJson;
   return (
     <div>
-      <PageHeadImage value="Contact Us" image={headImage} short={true} />
+      <PageHeadImage value="CONTSCT US" image={headImage} short={true} />
       <ContactForm />
       <MapTimes />
     </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Oswald, Inter, Gabriela, Great_Vibes } from "next/font/google";
-import "./globalLevani.css";
+import "./global.levani.css";
+import "./global.animations.css";
 import "./globals.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -50,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable}`}
+        className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable} fadeOut `}
       >
         {/* <Header /> */}
         {/* <Header2 /> */}

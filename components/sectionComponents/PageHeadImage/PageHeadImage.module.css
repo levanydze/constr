@@ -16,7 +16,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: var(--overlay);
+  background-color: var(--overlayDark);
 }
 
 .overlayWrapper {

@@ -10,7 +10,7 @@ export default function Reservation() {
 
   return (
     <div>
-      <PageHeadImage value="Reserv A Table" image={headImage} short={false} />
+      <PageHeadImage value="RESERV A TABLE" image={headImage} short={false} />
       <ReservationContactForm />
     </div>
   );

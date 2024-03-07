@@ -22,6 +22,7 @@
   padding: 10px;
   background-color: var(--backgroundLight);
 }
+
 .textDiv {
   border: 1px solid var(--gray4);
   text-align: center;

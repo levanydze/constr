@@ -33,7 +33,7 @@ export default function TextIntoPhoto({
           height={1000}
           alt={alt}
         ></Image>
-        <div className={styles.textDivWrapper}>
+        <div className={`slideUp ${styles.textDivWrapper}`}>
           <div className={styles.textDiv}>
             <Image
               src={TextIntoPhotoIcon}

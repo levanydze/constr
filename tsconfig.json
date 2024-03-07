@@ -28,7 +28,10 @@
     ".next/types/**/*.ts",
     "src/app/contact/cotactForm/contactForm.tsx",
     "components/sectionComponents/CotactForm/ContactForm.tsx",
-    "lib/DataFetch.tsx"
+    "lib/DataFetch.tsx",
+    "src/app/about/PhotosTextSlider/PhotosTextSlider.jsx",
+    "src/app/about/PhotosTextSlider/PhotosTextSliderHelper.jsx",
+    "src/app/about/page.tsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -10,7 +10,9 @@ interface HomePageMainProps {
 
 export default function MainImage({ image, alt, outline }: HomePageMainProps) {
   return (
-    <div className={`${styles.mainWrapper} ${outline ? styles.outline : null}`}>
+    <div
+      className={` ${styles.mainWrapper} ${outline ? styles.outline : null}`}
+    >
       <ImageOverlay />
       <div className={styles.imageDarkLayer}></div>
       <Image

@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./TwoTextAbout.module.css";
-import ReservationButton from "../../miniComponentsReusable/buttons/Button";
+import Button from "../../miniComponents/Button2";
 
 export default function TwoTextAbout() {
   return (
     <div className={styles.TwoTextWrapper}>
-      <div className={styles.head}>
-        <h4>Discover</h4>
-        <h2>NEW FLAVORS</h2>
-        <p className="twoLines"></p>
+      <div className={` ${styles.head}`}>
+        <h4 className="title6 font3 color1 slideUp">Discover</h4>
+        <h2 className="title7 slideUp ">NEW FLAVORS</h2>
+        <p className="twoLines "></p>
       </div>
-      <div className={styles.texts}>
+      <div className={`slideUp ${styles.texts}`}>
         <div className={styles.leftText}>
           <p className="text1">
             Fish is one of the most wholesome foods that man can eat. In fact,
@@ -28,11 +28,7 @@ export default function TwoTextAbout() {
           </p>
         </div>
       </div>
-      <ReservationButton
-        value="More About Us"
-        target="/about"
-        styling="button4"
-      />
+      <Button value="More About Us" target="/about" styling="button1 slideUp" />
     </div>
   );
 }

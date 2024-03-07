@@ -28,6 +28,7 @@
 .middle h3 {
   line-height: 25px;
   letter-spacing: 4px;
+  margin-top: -3%;
 }
 .middle h4 {
   letter-spacing: 1px;
@@ -67,7 +68,7 @@
 
 @media (max-width: 950px) {
   .middle {
-    /* width: 80%; */
+    width: 80%;
   }
 
   .middle h3 {
@@ -81,8 +82,9 @@
     width: 95%;
   }
 }
-@media (max-width: 450px) {
+
+@media (max-width: 370px) {
   .bottom {
-    /* display: none; */
+    display: none;
   }
 }

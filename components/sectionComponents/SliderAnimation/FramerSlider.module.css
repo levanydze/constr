@@ -10,6 +10,9 @@
 .exampleContainer img {
   position: absolute;
   max-width: 100vw;
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
 }
 
 .next,
@@ -45,4 +48,10 @@
 .next:hover,
 .prev:hover {
   background-color: var(--color1);
+}
+
+@media (max-width: 700px) {
+  .exampleContainer img {
+    height: 400px;
+  }
 }

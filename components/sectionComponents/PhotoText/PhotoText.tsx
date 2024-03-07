@@ -18,10 +18,10 @@ export default function PhotoText({
   sign,
 }: PhotoTextProps) {
   return (
-    <div className={`container2 ${styles.photoTextWrapper}`}>
+    <div className={` fadeUp container2 ${styles.photoTextWrapper}`}>
       <Image src={image} height={1500} width={1500} alt={image} />
-      <div className={styles.textDiv}>
-        <h2 className="signature color1 title9">{title1}</h2>
+      <div className={` ${styles.textDiv}`}>
+        <h2 className=" signature color1 title9">{title1}</h2>
         <h1 className="title4">{title2}</h1>
         <p className="twoLines"></p>
         <h3 className="text1 textMedium">{text}</h3>
