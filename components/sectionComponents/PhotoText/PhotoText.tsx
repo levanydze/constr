@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import styles from "./PhotoText.module.css";
 import Image from "next/image";
+import { useIntersectionObserver } from "../../../hooks/useIntersectionObserver";
 
 interface PhotoTextProps {
   image: string;
@@ -17,11 +19,22 @@ export default function PhotoText({
   text,
   sign,
 }: PhotoTextProps) {
+  const { isIntersecting, ref } = useIntersectionObserver({});
+
   return (
     <div className="container2">
-      <div className={` fadeUp  ${styles.photoTextWrapper}`}>
-        <Image src={image} height={1500} width={1500} alt={image} />
-        <div className={` ${styles.textDiv}`}>
+      <div ref={ref}></div>
+      <div className={`   ${styles.photoTextWrapper}`}>
+        <Image
+          src={image}
+          height={1500}
+          width={1500}
+          alt={image}
+          className={isIntersecting ? "moveRight" : ""}
+        />
+        <div
+          className={`${isIntersecting ? "moveLeft" : ""} ${styles.textDiv}`}
+        >
           <h2 className=" signature color1 title9">{title1}</h2>
           <h1 className="title4">{title2}</h1>
           <p className="twoLines"></p>

@@ -19,13 +19,12 @@ export default function GuyWithServices({ image }: GuyWithServicesProps) {
       <div className={styles.mainWrapper}>
         <div className={styles.textWrapper}>
           <h2 ref={ref} className="title2">
-            WE ARE EXPERT IN{" "}
+            WE ARE EXPERT IN
           </h2>
           <h3 className="title4">What we love to do</h3>
         </div>
         <div className={styles.threeSectionWrapper}>
           <div
-            ref={ref}
             className={`${styles.sideSection} ${
               isIntersecting ? "moveRight" : null
             }`}

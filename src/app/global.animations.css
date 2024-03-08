@@ -75,7 +75,7 @@
 }
 .moveUp3 {
   transform: translateY(200px);
-  animation: moveUp 1.2s ease forwards;
+  animation: moveUp 1.8s ease forwards;
 }
 .moveUp4 {
   transform: translateY(200px);
