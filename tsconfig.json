@@ -31,7 +31,8 @@
     "lib/DataFetch.tsx",
     "src/app/about/PhotosTextSlider/PhotosTextSlider.jsx",
     "src/app/about/PhotosTextSlider/PhotosTextSliderHelper.jsx",
-    "src/app/about/page.tsx"
+    "src/app/about/page.tsx",
+    "components/sectionComponents/Test/Test.jsx"
   ],
   "exclude": ["node_modules"]
 }

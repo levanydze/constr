@@ -62,7 +62,59 @@
 }
 /* ------------------------------------------- */
 
+/* -------------------------------------------------------------------------------------- */
+/* animations on useIntersectionObserver use client */
 /* ------------------------------------------- */
+.moveUp1 {
+  transform: translateY(200px);
+  animation: moveUp 1s ease forwards;
+}
+.moveUp2 {
+  transform: translateY(200px);
+  animation: moveUp 1.5s ease forwards;
+}
+.moveUp3 {
+  transform: translateY(200px);
+  animation: moveUp 1.2s ease forwards;
+}
+.moveUp4 {
+  transform: translateY(200px);
+  animation: moveUp 2.2s ease forwards;
+}
+
+@keyframes moveUp {
+  from {
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------------------- */
+.moveLeft {
+  transform: translateX(200px);
+  animation: moveLeft 1.8s ease forwards;
+}
+@keyframes moveLeft {
+  from {
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ------------------------------------------- */
+.moveRight {
+  transform: translateX(-200px);
+  animation: moveRight 1.8s ease forwards;
+}
+@keyframes moveRight {
+  from {
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 /* ------------------------------------------- */

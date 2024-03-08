@@ -1,25 +1,33 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "./GuyWithServices.module.css";
-import imagesJson from "../../../json/images.json";
 import assetsJson from "../../../json/assets.json";
 import EachService from "./EachService/EachService";
+import { useIntersectionObserver } from "../../../hooks/useIntersectionObserver";
 
 interface GuyWithServicesProps {
   image: string;
 }
 
 export default function GuyWithServices({ image }: GuyWithServicesProps) {
+  const { isIntersecting, ref } = useIntersectionObserver({});
   const { houseIcon, paintIcon, roofIcon } = assetsJson;
+
   return (
-    <div>
+    <div ref={ref} className="container1">
       <div className={styles.mainWrapper}>
         <div className={styles.textWrapper}>
           <h2 className="title2">WE ARE EXPERT IN </h2>
           <h3 className="title4">What we love to do</h3>
         </div>
         <div className={styles.threeSectionWrapper}>
-          <div className={styles.sideSection}>
+          <div
+            ref={ref}
+            className={`${styles.sideSection} ${
+              isIntersecting ? "moveRight" : null
+            }`}
+          >
             <EachService icon={paintIcon} title="Basement" url="./" />
             <EachService icon={roofIcon} title="Floor & Roofs" url="./" />
             <EachService icon={houseIcon} title="Management" url="./" />
@@ -31,7 +39,11 @@ export default function GuyWithServices({ image }: GuyWithServicesProps) {
             height={1200}
             alt="construction guy"
           ></Image>
-          <div className={styles.sideSection}>
+          <div
+            className={`${styles.sideSection} ${
+              isIntersecting ? "moveLeft" : null
+            }`}
+          >
             <EachService icon={roofIcon} title="Floor & Roofs" url="./" />
             <EachService icon={houseIcon} title="Management" url="./" />
             <EachService icon={paintIcon} title="Basement" url="./" />

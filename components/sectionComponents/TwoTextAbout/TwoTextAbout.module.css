@@ -7,9 +7,6 @@
 
 .head {
   text-align: center;
-  animation: slideLeft linear both;
-  animation-timeline: view();
-  animation-range: cover 10% cover 50%;
 }
 
 .head p {

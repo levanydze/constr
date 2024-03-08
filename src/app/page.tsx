@@ -23,7 +23,7 @@ export default function Home() {
         sign="Levani Levanidze"
       />
       <TwoTextAbout />
-      {/* <GuyWithServices image={guy} /> */}
+      <GuyWithServices image={guy} />
       <TextIntoPhoto
         TextIntoPhotoIcon={houseIcon}
         TextIntoPhotoImage={olivOilApple}
