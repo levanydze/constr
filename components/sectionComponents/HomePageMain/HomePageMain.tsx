@@ -19,7 +19,7 @@ export default function MainImage({ image, alt, outline }: HomePageMainProps) {
         className={styles.mainImage}
         src={image}
         alt={alt}
-        width={1200}
+        width={2000}
         height={1200}
         priority
       />
