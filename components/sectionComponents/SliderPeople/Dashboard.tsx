@@ -30,45 +30,47 @@ const Dashboard = () => {
 
   return (
     <Fragment>
-      <section className={styles.section}>
-        <div className={styles.title}>
-          <h2>
-            <span>/</span>Reviews
-          </h2>
-        </div>
-        <div className={styles.sectionCenter}>
-          {people.map((person, personIndex) => {
-            const { id, image, name, title, quote } = person;
-            let position = styles.nextSlide;
-            if (personIndex === index) {
-              position = styles.activeSlide;
-            }
+      <div className="container1">
+        <section className={styles.section}>
+          <div className={styles.title}>
+            <h2>
+              <span>/</span>Reviews
+            </h2>
+          </div>
+          <div className={styles.sectionCenter}>
+            {people.map((person, personIndex) => {
+              const { id, image, name, title, quote } = person;
+              let position = styles.nextSlide;
+              if (personIndex === index) {
+                position = styles.activeSlide;
+              }
 
-            if (
-              personIndex === index - 1 ||
-              (index === 0 && personIndex === people.length - 1)
-            ) {
-              position = styles.lastSlide;
-            }
+              if (
+                personIndex === index - 1 ||
+                (index === 0 && personIndex === people.length - 1)
+              ) {
+                position = styles.lastSlide;
+              }
 
-            return (
-              <div className={` ${styles.article} ${position}`} key={id}>
-                <img src={image} alt={name} className={styles.personImg} />
-                <h4>{name}</h4>
-                <p className={styles.title}>{title}</p>
-                <p className={styles.text}>{quote}</p>
-                <FaQuoteRight className={styles.icon} />
-              </div>
-            );
-          })}
-          <button className={styles.prev} onClick={() => setIndex(index - 1)}>
-            <FiChevronLeft />
-          </button>
-          <button className={styles.next} onClick={() => setIndex(index + 1)}>
-            <FiChevronRight />
-          </button>
-        </div>
-      </section>
+              return (
+                <div className={` ${styles.article} ${position}`} key={id}>
+                  <img src={image} alt={name} className={styles.personImg} />
+                  <h4>{name}</h4>
+                  <p className={styles.title}>{title}</p>
+                  <p className={styles.text}>{quote}</p>
+                  <FaQuoteRight className={styles.icon} />
+                </div>
+              );
+            })}
+            <button className={styles.prev} onClick={() => setIndex(index - 1)}>
+              <FiChevronLeft />
+            </button>
+            <button className={styles.next} onClick={() => setIndex(index + 1)}>
+              <FiChevronRight />
+            </button>
+          </div>
+        </section>
+      </div>
     </Fragment>
   );
 };

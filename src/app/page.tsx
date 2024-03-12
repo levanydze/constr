@@ -8,22 +8,32 @@ import PhotoText from "../../components/sectionComponents/PhotoText/PhotoText";
 import HomePageMain from "../../components/sectionComponents/HomePageMain/HomePageMain";
 import MapTimes from "../../components/sectionComponents/map&times/MapTimes";
 import TwoTextAbout from "../../components/sectionComponents/TwoTextAbout/TwoTextAbout";
+import Dashboard from "../../components/sectionComponents/SliderPeople/Dashboard";
 
 export default function Home() {
   const { houseIcon, chair } = assetsJson;
-  const { textIntoPhoto, chef, headImage, guy, olivOilApple } = imagesJson;
+  const {
+    textIntoPhoto,
+    chef,
+    headImage,
+    guy,
+    olivOilApple,
+    pizzaHands,
+    chef2,
+    chef3,
+  } = imagesJson;
   return (
     <main className="fadeOut">
-      <HomePageMain image={olivOilApple} alt="headImage" outline={true} />
+      <HomePageMain image={pizzaHands} alt="pizza" outline={true} />
       <PhotoText
-        image={chef}
+        image={chef3}
         title1="Leader's Word"
         title2="MADE FOR FUTURE"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum beatae, sapiente dolorem veniam doloribus eum harum rerum nemo pariatur numquam repellat dicta non architecto voluptas quasi molestiae! Commodi, molestiae?"
         sign="Levani Levanidze"
       />
       <TwoTextAbout />
-      <GuyWithServices image={guy} />
+      <GuyWithServices image={chef2} />
       <TextIntoPhoto
         TextIntoPhotoIcon={houseIcon}
         TextIntoPhotoImage={olivOilApple}
@@ -40,6 +50,8 @@ export default function Home() {
         title="Garantee of Crispiness"
         text="TEXT 222 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quidem, modi sapiente sed perspiciatis fuga facilis laboriosam, necessitatibus accusamus temporibus id minima, doloremque tempora neque illo qui eveniet nobis optio?"
       />
+      <Dashboard />
+
       <FourBox />
       <MapTimes />
     </main>

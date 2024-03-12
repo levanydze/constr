@@ -10,12 +10,12 @@ export const metadata = {
 };
 
 export default function MenuPage() {
-  const { headImage } = imagesJson;
+  const { headImage, pizza3High } = imagesJson;
   return (
     <div className="fadeOut ">
       <PageHeadImage
         value="OUR DELICIOUS MENU"
-        image={headImage}
+        image={pizza3High}
         short={true}
       />
       <Suspense fallback={<LoadingComponent />}>

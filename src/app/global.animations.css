@@ -38,11 +38,7 @@
     opacity: 1;
   }
 }
-/* @media screen and (max-width: 600px) {
-  .fadeOut {
-    animation: none;
-  }
-} */
+
 /* ------------------------------------------- */
 .fadeUp {
   animation: fadeUp linear both;
@@ -118,3 +114,21 @@
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 /* ------------------------------------------- */
+
+/* disable on mobile */
+@media screen and (max-width: 600px) {
+  .fadeOut,
+  .moveLeft,
+  .moveRight,
+  .moveUp1,
+  .moveUp2,
+  .moveUp3,
+  .moveUp4,
+  .slideOut,
+  .slideUp,
+  .fadeUp {
+    animation: none;
+    transform: translateX(0);
+    transform: translatey(0);
+  }
+}

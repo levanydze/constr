@@ -7,10 +7,10 @@ export const metadata = {
   title: "Contact",
 };
 export default function ContactPage() {
-  const { headImage } = imagesJson;
+  const { headImage, pizza2High } = imagesJson;
   return (
     <div className="fadeOut">
-      <PageHeadImage value="CONTSCT US" image={headImage} short={true} />
+      <PageHeadImage value="CONTSCT US" image={pizza2High} short={true} />
       <ContactForm />
       <MapTimes />
     </div>
