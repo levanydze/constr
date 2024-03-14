@@ -55,6 +55,8 @@ export const Example = () => {
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
+          width={600}
+          height={600}
           src={images[imageIndex]}
           custom={direction}
           variants={variants}

@@ -30,7 +30,7 @@ const Dashboard = () => {
 
   return (
     <Fragment>
-      <div className="container1">
+      <div className="container2">
         <section className={styles.section}>
           <div className={styles.title}>
             <h2 className="title4">The Crew</h2>
@@ -53,10 +53,10 @@ const Dashboard = () => {
               return (
                 <div className={` ${styles.article} ${position}`} key={id}>
                   <img src={image} alt={name} className={styles.personImg} />
-                  <h4 className={`title4 ${styles.name}`}>{name}</h4>
-                  <p className={` title2 font1 ${styles.title}`}>{title}</p>
+                  <h4 className={`title4 color1 ${styles.name}`}>{name}</h4>
+                  <p className={` title3 font1 ${styles.title}`}>{title}</p>
                   <p className={` text1 textMedium ${styles.text}`}>{quote}</p>
-                  <FaQuoteRight className={styles.icon} />
+                  <FaQuoteRight className={` title5 color1 ${styles.icon}`} />
                 </div>
               );
             })}

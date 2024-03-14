@@ -1,13 +1,13 @@
 .title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .sectionCenter {
   margin: 0 auto;
   margin-top: 4rem;
   width: 80vw;
-  height: 450px;
+  height: 550px;
   max-width: 800px;
   text-align: center;
   position: relative;
@@ -38,6 +38,7 @@
   line-height: 2;
 }
 .icon {
+  margin: 40px auto 0 auto;
 }
 .prev,
 .next {
