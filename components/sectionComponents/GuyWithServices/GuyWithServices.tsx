@@ -18,7 +18,7 @@ export default function GuyWithServices({ image }: GuyWithServicesProps) {
     <div className="container1">
       <div className={styles.mainWrapper}>
         <div className={styles.textWrapper}>
-          <h2 ref={ref} className="title2">
+          <h2 ref={ref} className="title2 textMediump;;/''">
             WE ARE EXPERT IN
           </h2>
           <h3 className="title4">What we love to do</h3>
@@ -36,8 +36,8 @@ export default function GuyWithServices({ image }: GuyWithServicesProps) {
           <Image
             className={styles.image}
             src={image}
-            width={700}
-            height={1200}
+            width={800}
+            height={1500}
             alt="construction guy"
           ></Image>
           <div

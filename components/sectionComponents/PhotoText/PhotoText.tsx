@@ -28,7 +28,7 @@ export default function PhotoText({
         <Image
           src={image}
           height={1500}
-          width={1500}
+          width={1000}
           alt={image}
           className={isIntersecting ? "moveRight" : ""}
         />

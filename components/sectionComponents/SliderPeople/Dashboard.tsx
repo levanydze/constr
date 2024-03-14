@@ -33,9 +33,7 @@ const Dashboard = () => {
       <div className="container1">
         <section className={styles.section}>
           <div className={styles.title}>
-            <h2>
-              <span>/</span>Reviews
-            </h2>
+            <h2 className="title4">The Crew</h2>
           </div>
           <div className={styles.sectionCenter}>
             {people.map((person, personIndex) => {
@@ -55,17 +53,23 @@ const Dashboard = () => {
               return (
                 <div className={` ${styles.article} ${position}`} key={id}>
                   <img src={image} alt={name} className={styles.personImg} />
-                  <h4>{name}</h4>
-                  <p className={styles.title}>{title}</p>
-                  <p className={styles.text}>{quote}</p>
+                  <h4 className={`title4 ${styles.name}`}>{name}</h4>
+                  <p className={` title2 font1 ${styles.title}`}>{title}</p>
+                  <p className={` text1 textMedium ${styles.text}`}>{quote}</p>
                   <FaQuoteRight className={styles.icon} />
                 </div>
               );
             })}
-            <button className={styles.prev} onClick={() => setIndex(index - 1)}>
+            <button
+              className={`textMedium ${styles.prev}`}
+              onClick={() => setIndex(index - 1)}
+            >
               <FiChevronLeft />
             </button>
-            <button className={styles.next} onClick={() => setIndex(index + 1)}>
+            <button
+              className={`textMedium ${styles.next}`}
+              onClick={() => setIndex(index + 1)}
+            >
               <FiChevronRight />
             </button>
           </div>

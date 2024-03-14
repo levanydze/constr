@@ -5,7 +5,7 @@ import styles from "./FramerSlider.module.css";
 
 function FramerSlider() {
   return (
-    <div className="">
+    <div className="container2">
       <div className={styles.exampleContainer}>
         <Example />
       </div>
