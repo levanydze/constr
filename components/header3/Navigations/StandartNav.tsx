@@ -8,6 +8,7 @@ export default function StandartNav() {
   const pathname = usePathname();
   return (
     <div className={styles.mainNavWrap}>
+      <ul></ul>
       <ul className={styles.listWrap}>
         {navItems.map(({ title, homePage, url, button }, index) => (
           <li key={index}>

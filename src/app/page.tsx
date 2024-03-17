@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main className="fadeOut">
       <HomePageMain image={pizzaHands} alt="pizza" outline={true} />
-      <CutGrass />
+      <CutGrass absolute />
       <PhotoText
         image={chef3}
         title1="Leader's Word"
@@ -53,6 +53,7 @@ export default function Home() {
         text="TEXT 222 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quidem, modi sapiente sed perspiciatis fuga facilis laboriosam, necessitatibus accusamus temporibus id minima, doloremque tempora neque illo qui eveniet nobis optio?"
       />
       <Dashboard />
+      <CutGrass absolute={false} />
       <FourBox />
       <MapTimes />
     </main>
