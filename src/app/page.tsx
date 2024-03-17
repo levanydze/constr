@@ -9,6 +9,7 @@ import HomePageMain from "../../components/sectionComponents/HomePageMain/HomePa
 import MapTimes from "../../components/sectionComponents/map&times/MapTimes";
 import TwoTextAbout from "../../components/sectionComponents/TwoTextAbout/TwoTextAbout";
 import Dashboard from "../../components/sectionComponents/SliderPeople/Dashboard";
+import CutGrass from "../../components/sectionComponents/cut-grass/CutGrass";
 
 export default function Home() {
   const { houseIcon, chair } = assetsJson;
@@ -25,6 +26,7 @@ export default function Home() {
   return (
     <main className="fadeOut">
       <HomePageMain image={pizzaHands} alt="pizza" outline={true} />
+      <CutGrass />
       <PhotoText
         image={chef3}
         title1="Leader's Word"
@@ -51,7 +53,6 @@ export default function Home() {
         text="TEXT 222 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quidem, modi sapiente sed perspiciatis fuga facilis laboriosam, necessitatibus accusamus temporibus id minima, doloremque tempora neque illo qui eveniet nobis optio?"
       />
       <Dashboard />
-
       <FourBox />
       <MapTimes />
     </main>

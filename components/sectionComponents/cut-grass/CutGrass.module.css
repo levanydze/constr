@@ -1,0 +1,31 @@
+.CutGrassWrapper {
+  width: 100%;
+  position: relative;
+}
+.CutGrassWrapper img {
+  width: 100%;
+  height: 100px;
+}
+
+.cutter {
+  top: 50%;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 0;
+}
+
+.cutter img {
+  object-fit: cover;
+  animation: cutting linear forwards;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+}
+
+@keyframes cutting {
+  0% {
+  }
+  100% {
+    transform: translateX(-80vw);
+    overflow: hidden;
+  }
+}
