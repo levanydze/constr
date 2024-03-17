@@ -7,7 +7,7 @@
 }
 
 .absolute {
-  margin-bottom: -100px;
+  margin-bottom: -10px;
   margin-top: -90px;
 }
 
@@ -31,7 +31,6 @@
 }
 
 .animateCutter {
-  /* margin-left: 40px; */
   animation: cutting 2.8s forwards;
 }
 
@@ -99,8 +98,8 @@
   }
 }
 
-@media (max-width: 100px) {
+/* @media (max-width: 100px) {
   .animateCutter {
     animation: none;
   }
-}
+} */
