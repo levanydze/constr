@@ -53,7 +53,7 @@ export default function Home() {
         text="TEXT 222 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quidem, modi sapiente sed perspiciatis fuga facilis laboriosam, necessitatibus accusamus temporibus id minima, doloremque tempora neque illo qui eveniet nobis optio?"
       />
       <Dashboard />
-      <CutGrass absolute={false} />
+      <CutGrass absolute />
       <FourBox />
       <MapTimes />
     </main>

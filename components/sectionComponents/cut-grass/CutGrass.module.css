@@ -3,7 +3,7 @@
   position: relative;
   background-image: url(https://github.com/levanydze/constructionSupport/blob/main/assets/unnamed.png?raw=true);
   background-size: 180px;
-  height: 99px;
+  height: 96px;
 }
 
 .absolute {
@@ -36,47 +36,47 @@
 
 @keyframes cutting {
   0% {
-    transform: rotate(15deg) scaleX(-1);
+    transform: translateX(60px) rotate(15deg) scaleX(-1);
   }
   6% {
-    transform: rotate(-15deg) scaleX(-1);
+    transform: translateX(60px) rotate(-15deg) scaleX(-1);
   }
   12% {
-    transform: rotate(13deg) scaleX(-1);
+    transform: translateX(60px) rotate(13deg) scaleX(-1);
   }
   17% {
-    transform: rotate(-13deg) scaleX(-1);
+    transform: translateX(60px) rotate(-13deg) scaleX(-1);
   }
   22% {
-    transform: rotate(10deg) scaleX(-1);
+    transform: translateX(60px) rotate(10deg) scaleX(-1);
   }
   26% {
-    transform: rotate(-10deg) scaleX(-1);
+    transform: translateX(60px) rotate(-10deg) scaleX(-1);
   }
   30% {
-    transform: rotate(8deg) scaleX(-1);
+    transform: translateX(60px) rotate(8deg) scaleX(-1);
   }
   34% {
-    transform: rotate(-8deg) scaleX(-1);
+    transform: translateX(60px) rotate(-8deg) scaleX(-1);
   }
   38% {
-    transform: rotate(6deg) scaleX(-1);
+    transform: translateX(60px) rotate(6deg) scaleX(-1);
   }
 
   41% {
-    transform: rotate(-6deg) scaleX(-1);
+    transform: translateX(60px) rotate(-6deg) scaleX(-1);
   }
 
   44% {
-    transform: rotate(3deg) scaleX(-1);
+    transform: translateX(60px) rotate(3deg) scaleX(-1);
   }
 
   46% {
-    transform: rotate(-3deg) scaleX(-1);
+    transform: translateX(60px) rotate(-3deg) scaleX(-1);
   }
 
   48% {
-    transform: rotate(0deg) scaleX(-1);
+    transform: translateX(60px) rotate(0deg) scaleX(-1);
   }
   65% {
     transform: translateX(-40px) rotate(30deg) scaleX(-1);
@@ -94,12 +94,15 @@
   }
 
   100% {
-    transform: translateX(100vw) rotate(0deg) translateX(-100%);
+    transform: translateX(98vw) rotate(0deg) translateX(-100%);
   }
 }
 
-/* @media (max-width: 100px) {
+@media (max-width: 600px) {
+  .CutGrassWrapper {
+    display: none;
+  }
   .animateCutter {
     animation: none;
   }
-} */
+}
