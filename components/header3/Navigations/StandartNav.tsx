@@ -12,6 +12,7 @@ export default function StandartNav() {
         {navItems.map(({ title, homePage, url, button }, index) => (
           <li key={index}>
             <Link
+              key={index}
               className={`${styles.navLink} ${
                 pathname === url || (pathname.startsWith(url) && !homePage)
                   ? styles.active

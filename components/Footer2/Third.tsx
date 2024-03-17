@@ -1,23 +1,36 @@
 import React from "react";
 import styles from "./Third.module.css";
 
+const events = [
+  {
+    date: "July 30, 2024",
+    title: "The principles of scientific cooking",
+  },
+  {
+    date: "August 08, 2024",
+    title: "Barbecue party tips for a truly amazing event",
+  },
+  {
+    date: "September 24, 2024",
+    title: "Cooking for one",
+  },
+  {
+    date: "December 24, 2024",
+    title: "Big pizza party",
+  },
+];
+
 export default function Third() {
   return (
     <main>
       <h5 className="title3">Events</h5>
+      {events.slice(0, 3).map((event, index) => (
+        <div className={styles.eventWrap} key={index}>
+          <p>{event.date}</p>
+          <h3>{event.title}</h3>
+        </div>
+      ))}
 
-      <div className={styles.eventWrap}>
-        <p>July 30, 2017</p>
-        <h3>The principles of scientific cooking</h3>
-      </div>
-      <div className={styles.eventWrap}>
-        <p>August 9, 2017</p>
-        <h3>Barbecue party tips for a truly amazing event</h3>
-      </div>
-      <div className={styles.eventWrap}>
-        <p>September 24, 2017 </p>
-        <h3>Cooking for one</h3>
-      </div>
       <div>
         <p>View All Posts</p>
       </div>

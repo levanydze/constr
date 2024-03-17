@@ -72,6 +72,9 @@
   border-radius: 3px;
   padding: 0 5px;
   background-color: var(--red);
+  height: 18px;
+  align-items: center;
+  display: flex;
 }
 
 /* Text Start */

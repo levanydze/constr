@@ -23,8 +23,8 @@ export default function PageHeadImage({
         className={` ${styles.mainImage} ${short ? styles.short : ""}`}
         src={image}
         alt={image}
-        width={1200}
-        height={1200}
+        width={1000}
+        height={700}
         priority
       />
     </div>

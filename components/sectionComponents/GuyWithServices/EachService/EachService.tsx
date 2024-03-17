@@ -13,7 +13,7 @@ export default function EachService({ icon, url, title }: EachServiceProps) {
     <div>
       <Image src={icon} width={50} height={50} alt={title}></Image>
       <h2 className="title3 ">{title}</h2>
-      <Link className=" textMedium" href={url}>
+      <Link className=" textMedium title1" href={url}>
         Learn more
       </Link>
     </div>

@@ -18,7 +18,7 @@ export default function GuyWithServices({ image }: GuyWithServicesProps) {
     <div className="container1">
       <div className={styles.mainWrapper}>
         <div className={styles.textWrapper}>
-          <h2 ref={ref} className="title2 textMediump;;/''">
+          <h2 ref={ref} className="title2 textMedium">
             WE ARE EXPERT IN
           </h2>
           <h3 className="title4">What we love to do</h3>

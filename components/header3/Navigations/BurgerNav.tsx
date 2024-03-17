@@ -30,6 +30,7 @@ export default function BurgerNav({
           {navItems.map(({ title, url, homePage, button }, index) => (
             <li key={index} className={styles.burgerLi}>
               <Link
+                key={index}
                 className={`${styles.burgerLink} ${button ? "button1" : ""}
                   ${
                     pathname === url || (pathname.startsWith(url) && !homePage)
