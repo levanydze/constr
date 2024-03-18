@@ -6,12 +6,12 @@ import Logo from "../miniComponents/Logo/Logo";
 
 export default function Header() {
   return (
-    <main className={styles.headWrapper}>
+    <div className={styles.headWrapper}>
       <Logo />
       <div>
         <Navigation />
         <BurgerNav />
       </div>
-    </main>
+    </div>
   );
 }

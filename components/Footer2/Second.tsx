@@ -5,7 +5,7 @@ import { navItems } from "../header3/NavArray";
 
 export default function Second() {
   return (
-    <main>
+    <div>
       <h5 className="title3">Navigation</h5>
 
       <div className={styles.menuWrap}>
@@ -16,6 +16,6 @@ export default function Second() {
           </Link>
         ))}
       </div>
-    </main>
+    </div>
   );
 }

@@ -18,7 +18,7 @@ export default function Fourth() {
   const { instagramUrl } = infoJson;
 
   return (
-    <main className={styles.wrapper}>
+    <div className={styles.wrapper}>
       <h5 className="title3">Instagram</h5>
       <Link className={styles.imageWrapper} target="_blank" href={instagramUrl}>
         {images.slice(0, 6).map((img, index) => (
@@ -36,6 +36,6 @@ export default function Fourth() {
       <Link href={instagramUrl} target="_blank">
         <p>View More Photos</p>
       </Link>
-    </main>
+    </div>
   );
 }

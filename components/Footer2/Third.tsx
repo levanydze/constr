@@ -22,7 +22,7 @@ const events = [
 
 export default function Third() {
   return (
-    <main>
+    <div>
       <h5 className="title3">Events</h5>
       {events.slice(0, 3).map((event, index) => (
         <div className={styles.eventWrap} key={index}>
@@ -34,6 +34,6 @@ export default function Third() {
       <div>
         <p>View All Posts</p>
       </div>
-    </main>
+    </div>
   );
 }
