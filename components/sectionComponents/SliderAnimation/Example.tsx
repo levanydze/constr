@@ -82,10 +82,10 @@ export const Example = () => {
         />
       </AnimatePresence>
       <div className={styles.next} onClick={() => paginate(1)}>
-        {"‣"}
+        <p>‣</p>
       </div>
       <div className={styles.prev} onClick={() => paginate(-1)}>
-        {"‣"}
+        <p>‣</p>
       </div>
     </>
   );

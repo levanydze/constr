@@ -12,3 +12,10 @@
   display: flex;
   gap: 10px;
 }
+
+.socialMedia a {
+  transition: all 0.3s ease-in-out;
+}
+.socialMedia a:hover {
+  background-color: var(--color1);
+}

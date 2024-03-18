@@ -81,8 +81,8 @@
 
 /* containers */
 .container1 {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   padding: 10px;
   background-color: var(--backgroundLight);
 }
