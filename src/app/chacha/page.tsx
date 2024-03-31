@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { get, ref, getDatabase } from "firebase/database";
-import { app } from "../firebaseConfig";
+import { auth as app } from "../firebaseConfig";
 import ChachaCard from "./ChachaCard";
 import PageHeadImage from "../../../components/sectionComponents/PageHeadImage/PageHeadImage";
 import imagesJson from "../../../json/images.json";
