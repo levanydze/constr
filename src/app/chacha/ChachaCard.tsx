@@ -4,7 +4,7 @@ import styles from "./ChachaCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Chacha({
+export default function Chacha({
   image,
   name,
   id,
