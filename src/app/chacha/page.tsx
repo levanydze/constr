@@ -28,7 +28,7 @@ export interface SectionsProps {
   menuItems: MenuItemProps[];
 }
 
-export default function Chacha() {
+export default async function Chacha() {
   const { headImage, pizza3High } = imagesJson;
   const [loading, setLoading] = useState(false);
   const [menuList, setMenuList] = useState<SectionsProps[]>([]);
