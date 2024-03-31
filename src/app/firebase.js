@@ -19,4 +19,4 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app); // Always initialize Firebase Analytics
-export const auth = getAuth(app);
+export const auth = getAuth(app); //ss
