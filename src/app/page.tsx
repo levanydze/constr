@@ -1,3 +1,4 @@
+"use client";
 import GuyWithServices from "../../components/sectionComponents/GuyWithServices/GuyWithServices";
 // import ImageTextButton from "../../components/sectionComponents/ImageTextButton/ImageTextButton";
 import FourBox from "../../components/sectionComponents/FourBoxes/FourBox";
@@ -22,11 +23,13 @@ export default function Home() {
     pizzaHands,
     chef2,
     chef3,
+    March26Main,
   } = imagesJson;
   return (
     <main className="fadeOut">
       <HomePageMain image={pizzaHands} alt="pizza" outline={true} />
       <CutGrass absolute />
+
       <PhotoText
         image={chef3}
         title1="Leader's Word"

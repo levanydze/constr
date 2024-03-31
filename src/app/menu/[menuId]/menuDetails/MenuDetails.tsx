@@ -62,6 +62,10 @@ export default async function MenuDetails({ menuId }: MenuDetailsProps) {
           Price: {data.price} Sek
         </h4>
       </div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat
+      animi facere praesentium iusto quod molestiae delectus neque atque ullam!
+      Blanditiis inventore earum possimus delectus, placeat voluptates ipsa
+      minima aperiam.
     </div>
   );
 }

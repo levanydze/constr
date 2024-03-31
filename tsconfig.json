@@ -32,7 +32,9 @@
     "src/app/about/PhotosTextSlider/PhotosTextSlider.jsx",
     "src/app/about/PhotosTextSlider/PhotosTextSliderHelper.jsx",
     "src/app/about/page.tsx",
-    "components/sectionComponents/Test/Test.jsx"
+    "components/sectionComponents/Test/Test.jsx",
+    "src/app/firebaseConfig.js",
+    "src/app/Tsting.tsx"
   ],
   "exclude": ["node_modules"]
 }
