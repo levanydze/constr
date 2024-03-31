@@ -10,7 +10,7 @@ interface MenuDetailsProps {
   chachaId: string;
 }
 
-export default async function MenuDetails({ chachaId }: MenuDetailsProps) {
+export default function MenuDetails({ chachaId }: MenuDetailsProps) {
   const [menuData, setMenuData] = useState<MenuItemProps | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 

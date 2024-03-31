@@ -12,7 +12,7 @@ interface MenuDetailsPageProps {
   };
 }
 
-export default async function ChachaIdpage({ params }: MenuDetailsPageProps) {
+export default function ChachaIdpage({ params }: MenuDetailsPageProps) {
   const { headImage } = imageJson;
 
   return (
