@@ -1,3 +1,4 @@
+"use client";
 import { MenuItemProps } from "./page";
 import styles from "./ChachaCard.module.css";
 import Image from "next/image";

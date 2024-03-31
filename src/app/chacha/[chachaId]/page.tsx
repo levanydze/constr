@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import styles from "../../menu/[menuId]/page.module.css";
-import { MenuItemProps } from "../page";
 import imageJson from "../../../../json/images.json";
 import PageHeadImage from "../../../../components/sectionComponents/PageHeadImage/PageHeadImage";
 import { RiArrowGoBackFill } from "react-icons/ri";
