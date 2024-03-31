@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import styles from "../../menu/[menuId]/page.module.css";
 import { MenuItemProps } from "../page";
