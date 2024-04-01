@@ -1,7 +1,6 @@
 "use server";
 import { getDatabase, ref, get } from "firebase/database";
 import { app } from "./firebaseConfig";
-import { revalidatePath } from "next/cache";
 
 export interface MenuItemProps {
   id: string;
@@ -27,8 +26,6 @@ interface MenuSection {
 
 export const fireData = async (): Promise<MenuSection[] | null> => {
   try {
-    revalidatePath("/serverMenu");
-
     const db = getDatabase(app);
     const dbRef = ref(db, `chachaab/menu`);
     const snapshot = await get(dbRef);
