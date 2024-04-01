@@ -34,7 +34,8 @@
     "src/app/about/page.tsx",
     "components/sectionComponents/Test/Test.jsx",
     "src/app/firebase.js",
-    "src/app/Tsting.tsx"
+    "src/app/Tsting.tsx",
+    "src/app/serverMenu/page.tsx"
   ],
   "exclude": ["node_modules"]
 }
