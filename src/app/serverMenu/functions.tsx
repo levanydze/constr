@@ -28,8 +28,11 @@ export const fireData = async (): Promise<MenuSection[] | null> => {
     const db = getDatabase(app);
     const dbRef = ref(db, `chachaab/menu`);
     const snapshot = await get(dbRef);
-    cache: "no-store";
-
+    {
+      next: {
+        revalidate: 3600;
+      }
+    }
     if (snapshot.exists()) {
       const data = snapshot.val();
       const menuListArray: MenuSection[] = Object.entries(data).map(
