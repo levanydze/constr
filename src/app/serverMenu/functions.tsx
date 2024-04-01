@@ -30,7 +30,7 @@ export const fireData = async (): Promise<MenuSection[] | null> => {
     const snapshot = await get(dbRef);
     {
       next: {
-        revalidate: 3600;
+        revalidate: 60;
       }
     }
     if (snapshot.exists()) {
