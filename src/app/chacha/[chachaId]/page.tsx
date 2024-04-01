@@ -22,6 +22,7 @@ export default function ChachaIdpage({ params }: MenuDetailsPageProps) {
         <Link href="./">
           <RiArrowGoBackFill className={styles.goBackIcon} />
         </Link>
+        {/* <h2> {params.chachaId}</h2> */}
         <MenuDetails chachaId={params.chachaId} />
       </div>
     </div>

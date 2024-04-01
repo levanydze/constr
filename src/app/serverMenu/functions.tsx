@@ -19,12 +19,12 @@ export interface MenuItemProps {
   vegan: boolean;
 }
 
-interface MenuSection {
+export interface MenuSection {
   menuCategory: string;
   menuItems: MenuItemProps[];
 }
 
-export const fireData = async (): Promise<MenuSection[] | null> => {
+export const fireData = async (id: string): Promise<MenuSection[] | null> => {
   try {
     const db = getDatabase(app);
     const dbRef = ref(db, `chachaab/menu`);
@@ -51,3 +51,22 @@ export const fireData = async (): Promise<MenuSection[] | null> => {
     return null;
   }
 };
+
+export async function fireEachData(id: string): Promise<MenuItemProps | null> {
+  try {
+    const db = getDatabase(app);
+    const dbRef = ref(db, `chachaab/menu/breakfast/${id}`);
+    const snapshot = await get(dbRef);
+
+    if (snapshot.exists()) {
+      const data = snapshot.val();
+      return data as MenuItemProps; // Cast the data to MenuItemProps
+    } else {
+      console.error(`No data available for menu with ID: ${id}`);
+      return null;
+    }
+  } catch (error) {
+    console.error("Error fetching menu data:", error);
+    return null;
+  }
+}

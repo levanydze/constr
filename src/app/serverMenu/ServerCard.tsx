@@ -19,7 +19,7 @@ export default async function ServerCard({
 }: MenuItemProps) {
   return (
     <div className={styles.cardWrapper}>
-      <Link href={`/menu/${id}`}>
+      <Link href={`/serverMenu/${id}`}>
         <Image src={image} width={600} height={600} alt={name}></Image>
       </Link>
       <div className={styles.cardInfoDiv}>

@@ -1,0 +1,18 @@
+.pageDetailWrapper {
+  background-color: var(--color2);
+}
+
+.lowerDiv {
+  position: relative;
+}
+.goBackIcon {
+  padding: 10px;
+  margin: 2% 5%;
+  color: var(--textMedium);
+  font-size: 50px;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.goBackIcon:hover {
+  color: var(--textLight);
+}

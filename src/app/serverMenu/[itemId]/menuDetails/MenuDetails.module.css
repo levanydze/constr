@@ -1,0 +1,85 @@
+.menuDetailsWrapper {
+  background-color: var(--color2);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  gap: 4%;
+  padding-bottom: 200px;
+}
+
+.imgWrapper img {
+  object-fit: cover;
+  border: 8px solid var(--textLight);
+  padding: 5px;
+  width: 400px;
+  height: 400px;
+  min-width: 400px;
+}
+
+.infoWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  padding: 20px 0;
+  max-width: 600px;
+}
+
+.specifications {
+  display: flex;
+  gap: 5px;
+}
+
+.specifications p {
+  text-transform: uppercase;
+  padding: 5px 5px;
+  width: auto;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.special {
+  background-color: var(--color1);
+}
+.season {
+  background-color: var(--season);
+}
+.vegan {
+  background-color: var(--vegan);
+}
+.spicy {
+  background-color: var(--spicy);
+}
+.newItem {
+  background-color: var(--new);
+}
+
+.price {
+  border-radius: 10px;
+  text-align: right;
+}
+
+@media (max-width: 1000px) {
+  .menuDetailsWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .imgWrapper {
+    margin: 0 auto;
+  }
+  .imgWrapper img {
+    min-width: 0px;
+  }
+  .infoWrapper {
+    margin: 0 auto 50px auto;
+    gap: 20px;
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .infoWrapper {
+    width: 80%;
+  }
+}
