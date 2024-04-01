@@ -1,6 +1,11 @@
-"use server";
+import { initializeApp } from "firebase/app";
 import { getDatabase, ref, get } from "firebase/database";
-import { app } from "./firebaseConfig";
+const firebaseConfig = {
+  databaseURL:
+    "https://chacha-9137b-default-rtdb.europe-west1.firebasedatabase.app",
+};
+const app = initializeApp(firebaseConfig);
+//  end of firebase
 
 export interface MenuItemProps {
   id: string;
@@ -24,7 +29,7 @@ export interface MenuSection {
   menuItems: MenuItemProps[];
 }
 
-export const fireData = async (): Promise<MenuSection[] | null> => {
+export async function fireData(): Promise<MenuSection[] | null> {
   try {
     const db = getDatabase(app);
     const dbRef = ref(db, `chachaab/menu`);
@@ -50,23 +55,34 @@ export const fireData = async (): Promise<MenuSection[] | null> => {
     alert("Error fetching section data");
     return null;
   }
-};
+}
 
 export async function fireEachData(id: string): Promise<MenuItemProps | null> {
   try {
     const db = getDatabase(app);
-    const dbRef = ref(db, `chachaab/menu/breakfast/${id}`);
+    const dbRef = ref(db, `chachaab/menu`);
     const snapshot = await get(dbRef);
 
     if (snapshot.exists()) {
       const data = snapshot.val();
-      return data as MenuItemProps; // Cast the data to MenuItemProps
+
+      // Iterate through categories to find the menu item with the provided id
+      for (const [category, items] of Object.entries(data)) {
+        const menuItems = items as { [key: string]: MenuItemProps };
+        const menuItem = menuItems[id];
+        if (menuItem) {
+          return menuItem as MenuItemProps;
+        }
+      }
+      console.error(`No menu item found with ID: ${id}`);
+      return null;
     } else {
-      console.error(`No data available for menu with ID: ${id}`);
+      console.log("No  data available");
       return null;
     }
   } catch (error) {
     console.error("Error fetching menu data:", error);
+    alert("Error fetching menu data");
     return null;
   }
 }

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { get, ref, getDatabase } from "firebase/database";
-import { app } from "../../firebase";
+import { app } from "../firebase";
 import styles from "./MenuDetails.module.css";
 import Image from "next/image";
 import { MenuItemProps } from "../page";

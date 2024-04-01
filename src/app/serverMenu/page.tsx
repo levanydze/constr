@@ -3,7 +3,7 @@ import { fireData } from "./functions";
 import ServerCard from "./ServerCard";
 import imagesJson from "../../../json/images.json";
 import PageHeadImage from "../../../components/sectionComponents/PageHeadImage/PageHeadImage";
-import { MenuItemProps } from "./functions";
+export const revalidate = 3600; // revalidate at most every hour
 
 export default async function ServerMenu() {
   const data = await fireData();
