@@ -24,7 +24,7 @@ export interface MenuSection {
   menuItems: MenuItemProps[];
 }
 
-export const fireData = async (id: string): Promise<MenuSection[] | null> => {
+export const fireData = async (): Promise<MenuSection[] | null> => {
   try {
     const db = getDatabase(app);
     const dbRef = ref(db, `chachaab/menu`);
