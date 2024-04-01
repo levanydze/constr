@@ -29,6 +29,7 @@ export default async function ServerMenu() {
                 <div className="flex items-center flex-wrap justify-center">
                   {section.menuItems.map((item) => (
                     <ServerCard
+                      key={item.id}
                       id={item.id}
                       name={item.name}
                       image={item.image}

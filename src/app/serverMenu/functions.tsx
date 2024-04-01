@@ -28,6 +28,7 @@ export const fireData = async (): Promise<MenuSection[] | null> => {
     const db = getDatabase(app);
     const dbRef = ref(db, `chachaab/menu`);
     const snapshot = await get(dbRef);
+    cache: "no-store";
 
     if (snapshot.exists()) {
       const data = snapshot.val();
