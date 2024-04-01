@@ -1,5 +1,6 @@
 import { getDatabase, ref, get } from "firebase/database";
 import { app } from "./firebaseConfig";
+export const revalidate = 60;
 
 export interface MenuItemProps {
   id: string;
@@ -28,11 +29,7 @@ export const fireData = async (): Promise<MenuSection[] | null> => {
     const db = getDatabase(app);
     const dbRef = ref(db, `chachaab/menu`);
     const snapshot = await get(dbRef);
-    {
-      next: {
-        revalidate: 60;
-      }
-    }
+
     if (snapshot.exists()) {
       const data = snapshot.val();
       const menuListArray: MenuSection[] = Object.entries(data).map(
